@@ -219,7 +219,7 @@ section div h3{
     transition: 2s; */
 }
 .marco:hover{
-    transform: scale(1.3);
+    transform: scale(1.3) !important;
 }
 /* .foto:hover{
     filter: none;
