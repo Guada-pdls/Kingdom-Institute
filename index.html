@@ -8,6 +8,7 @@
     <title>Kingdom Institute</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/930af3fab0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -25,7 +26,7 @@
     </header>
 
     <main>
-        <section class="datos">
+        <section class="datos" data-aos="zoom-in">
             <div>
                 <h3>NUESTRAS PROMOCIONES EXCLUSIVAS</h3>
                 <ul class="promos">
@@ -46,7 +47,7 @@
             </div>
         </section>
 
-        <section class="icons">
+        <section class="icons" data-aos="zoom-in-up">
             <ul>
                 <li><img src="./images/clock.svg" alt="Horario" class="icon">Lunes a viernes de 14:00 a 19:00hs</li>
                 <li class="borde"><img src="./images/map-pin.svg" alt="Ubicación" class="icon">Heredia 4270</li>
@@ -63,6 +64,11 @@
             <li><a href=""><img src="./images/mail.svg" alt="Correo" class="icon-peque"></a></li>
         </ul>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
