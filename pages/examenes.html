@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <title>Exámenes - Kingdom Institute</title>
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/930af3fab0.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <a href="../index.html"><img src="../images/logo.png" alt="Logo del instituto" class="logo"></a>
-            <ul class="enlaces">
-                <li><a href="../pages/cursos.html">CURSOS</a></li>
-                <li><a href="../pages/clases_personalizadas.html">CLASES PERSONALIZADAS</a></li>
-                <li><a href="../pages/examenes.html">EXÁMENES</a></li>
-                <li><a href="../pages/galeria.html">GALERÍA</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="Logo del instituto" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse enlaces" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../pages/cursos.html">CURSOS</a>
+                  <a class="nav-link" href="../pages/clases_personalizadas.html">CLASES PERSONALIZADAS</a>
+                  <a class="nav-link" href="../pages/examenes.html">EXÁMENES</a>
+                  <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>
+                  <a class="nav-link" href="#contacto">CONTACTO</a>
+                </div>
+              </div>
+            </div>
+          </nav>    
     </header>
 
     <main>
@@ -72,6 +80,8 @@
 <script>
     AOS.init();
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 </html>
