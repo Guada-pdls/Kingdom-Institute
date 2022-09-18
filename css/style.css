@@ -55,9 +55,9 @@ main{
     background-color: #060b5ae0;
     color: white;
     min-height: 600px;
+    font-family: "Montserrat";
 }
 p{
-    font-family: "Montserrat";
     font-size: 1.1rem;
     padding: 40px;
 }
@@ -66,14 +66,13 @@ a{
     color: black;
 }
 .descuento{
-    width: 14%;
+    max-width: 120px;
 }
 h3{
     font-family: "Quicksand";
     font-size: 1.6rem;
 }
 h4{
-    font-family: "Montserrat";
     font-size: 1.3rem;
     padding-left: 2rem;
     padding-top: 1rem;
@@ -82,7 +81,6 @@ h4{
     padding: 2rem;
 }
 .promos{
-    font-family: "Montserrat";
     font-size: 1.2rem;
     padding: 1.5rem;
     border-right: 1px solid #fff;
@@ -99,7 +97,7 @@ h4{
 .promos li img{
     padding-left: 1.5rem;
 }
-span{
+.bold{
     font-weight: bold;
 }
 .datos{
@@ -115,13 +113,11 @@ span{
     align-self: center;
 }
 .punteo li{
-    padding: 2rem 1.2rem;
+    padding: 1.5rem 1.2rem;
     padding-right: 5rem;
-    max-width: 550px;
     text-align: left;
 }
 .punteo{
-    font-family: "Montserrat";
     font-size: 1.2rem;
     padding-left: 4rem;
 }
@@ -166,6 +162,12 @@ section div h3{
 }
 .examenes, .cursos{
     padding: 1rem 2rem;
+}
+.examenes div ul li{
+    padding: 0 0 20px 30px;
+}
+.sangria{
+    padding-left: 2rem;
 }
 
 /* grid clases personalizadas */
@@ -244,7 +246,7 @@ footer{
     justify-content: flex-end;
 }
 
-/* media querie tablets */
+/* media querie md */
 
 @media screen and (max-width: 992px){
 
@@ -318,9 +320,9 @@ footer{
     }
 }
 
-/* media querie tablets mini y mobile grande */
+/* media querie sm */
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
 
     h3{
         font-size: 1.4rem;
@@ -337,8 +339,15 @@ footer{
     .centrado p{
         font-size: 1.1rem;
     }
+    .descuento{
+        max-width: 100px;
+    }
     .punteo{
         padding-top: 20px;
+        padding-left: 3rem;
+    }
+    .carousel{
+        padding: 1rem 0;
     }
 
     /* Galería */
@@ -370,15 +379,16 @@ footer{
     } 
 }
 
-/* media querie mobile pequeño */
+/* media querie xs */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 576px){
 
     h3{
         font-size: 1.2rem;
     }
     h4, p{
         font-size: 1.1rem;
+        padding: 10px;
     }
     .promos{
         padding: 0.9rem;
@@ -390,11 +400,11 @@ footer{
     .promos li{
         font-size: 1rem;
     }
-    .centrado{
-        font-size: 1rem;
+    .punteo{
+        padding-left: 25px;
     }
     .punteo li{
-        padding: 1rem;
+        padding: 0.8rem;
         font-size: 1.1rem;
     }
     .icons ul li{
