@@ -1,0 +1,79 @@
+@media screen and (max-width: 576px){
+
+    h3{
+        font-size: 1.2rem;
+    }
+    h4, p{
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .promos{
+        padding: 0.9rem;
+        li{
+            font-size: 1rem;
+            img{
+                padding-left: 1rem;
+                width: 5rem;
+            }
+        }
+    }
+    .punteo{
+        padding-left: 25px;
+        li{
+            padding: 0.8rem;
+            font-size: 1.1rem;
+        }
+    }
+    .icons ul li{
+        padding: 1rem 0.3rem;
+    }
+
+    /* Galería */
+
+    .marco{
+        width: 300px;
+        height: 200px;
+        margin: 30px 40px;
+        .foto{
+            max-width: 300px;
+            max-height: 200px;
+        }
+    
+    }
+    
+    /* grid clases personalizadas */
+
+    .section1{
+        grid-template-rows: 0.1fr 0.7fr 0.6fr;
+        h3{
+            padding-top: 2rem;
+        }
+        div{
+            img{
+                max-width: 260px;
+            }
+        }
+    }
+    .punteo li{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* footer */
+
+    footer{
+        display: flex;
+        justify-content: center;
+        ul{
+            li{
+                display: inline-block;
+                margin: 8px;
+                .icon-peque{
+                    width: 35px;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+}

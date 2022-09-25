@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(../font/Quicksand/static/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat/static/Montserrat-Regular.ttf);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@import './main';
+@import './header';
+@import './footer';
+@import './clases-personalizadas';
+@import './galeria';
+@import './media-querie-md';
+@import './media-querie-sm';
+@import './media-querie-xs';

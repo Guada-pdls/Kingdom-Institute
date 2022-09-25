@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    justify-content: flex-end;
+    ul{
+        li{
+            display: inline-block;
+            margin: 10px;
+            .icon-peque{
+                width: 40px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
