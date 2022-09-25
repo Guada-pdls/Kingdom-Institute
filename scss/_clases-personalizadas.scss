@@ -8,12 +8,14 @@
     h3{
         grid-area: title;
         text-align: center;
-        padding: 2rem;
+        padding: 3rem;
     }
     .punteo{
         grid-area: punteo;
-        padding-top: 0px;
-        padding-bottom: 2rem;
+        li{
+            padding: 0 0 2rem 2rem;
+            font-size: 1.2rem;
+        }
     }
     div{
         grid-area: img;
@@ -23,6 +25,7 @@
         img{
             max-width: 600px;
             border-radius: 10px;
+            padding-top: 50px;
         }
     }
 }
