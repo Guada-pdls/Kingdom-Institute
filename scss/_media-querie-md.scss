@@ -5,11 +5,11 @@
 
     .enlaces{
         justify-content: center;
-        div{
-            a{
-                display: flex;
-                justify-content: center;
-            }
+    }
+    div{
+        a{
+            display: flex;
+            justify-content: center;
         }
     }
 
@@ -22,21 +22,23 @@
     .datos{
         flex-direction: column;
         margin-bottom: 6vh;
-        .descuento{
-            width: 6rem;
-        }
+    }
+    .descuento{
+        width: 6rem;
     }
     .punteo {
         li{
         padding: 4vw;
         }
     }
-    .icons ul{
-        padding: 5vw 10vh; 
-        border-top: #fff 1px solid;
-        flex-direction: column;
-        li{
-            margin: 20px 0;
+    .icons{
+        ul{
+            padding: 5vw 10vh; 
+            border-top: #fff 1px solid;
+            flex-direction: column;
+            li{
+                margin: 20px 0;
+            }
         }
     }
     .borde, .promos{
@@ -52,10 +54,10 @@
         width: 260px;
         height: 160px;
         margin: 30px 40px;
-        .foto{
-            max-width: 260px;
-            max-height: 160px;
-        }
+    }
+    .foto{
+        max-width: 260px;
+        max-height: 160px;
     }
     
     /* grid clases personalizadas */

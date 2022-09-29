@@ -2,31 +2,31 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo{
-        max-width: 150px;
-        padding: 5%;
-        transition: 1s;
+}
+.logo{
+    max-width: 150px;
+    padding: 5%;
+    transition: 1s;
+    &:hover{
+        @include hovers(0.9);
+    } 
+}
+.enlaces{
+    display: flex;
+    justify-content: flex-end;
+    a{
+        font-family: "Quicksand";
+        font-size: 1rem;
+        list-style: none;
+        margin: 1rem;
+        display: inline-block;
+        padding: 0.4rem;
+        border-radius: 5rem;
+        transition: 0.5s;
+        color: #000;
         &:hover{
-            @include hovers(0.9);
-        } 
-    }
-    .enlaces{
-        display: flex;
-        justify-content: flex-end;
-        a{
-            font-family: "Quicksand";
-            font-size: 1rem;
-            list-style: none;
-            margin: 1rem;
-            display: inline-block;
-            padding: 0.4rem;
-            border-radius: 5rem;
-            transition: 0.5s;
-            color: #000;
-            &:hover{
-                color: #ffffff;
-                background-color: $blue;
-            }
+            color: #ffffff;
+            background-color: $blue;
         }
     }
 }

@@ -5,13 +5,13 @@ footer{
         li{
             display: inline-block;
             margin: 10px;
-            .icon-peque{
-                width: 40px;
-                transition: 1s;
-                &:hover{
-                    @include hovers(0.9);
-                }
-            }
         }
+    }
+}
+.icon-peque{
+    width: 40px;
+    transition: 1s;
+    &:hover{
+        @include hovers(0.9);
     }
 }

@@ -25,8 +25,12 @@
             font-size: 1.1rem;
         }
     }
-    .icons ul li{
-        padding: 1rem 0.3rem;
+    .icons{
+        ul{
+            li{
+                padding: 1rem 0.3rem;
+            }
+        }
     }
 
     /* Galería */
@@ -34,12 +38,11 @@
     .marco{
         width: 300px;
         height: 200px;
-        margin: 30px 40px;
-        .foto{
-            max-width: 300px;
-            max-height: 200px;
-        }
-    
+        margin: 30px 40px;    
+    }
+    .foto{
+        max-width: 300px;
+        max-height: 200px;
     }
     
     /* grid clases personalizadas */
@@ -55,9 +58,11 @@
             }
         }
     }
-    .punteo li{
-        padding: 1rem;
-        font-size: 1rem;
+    .punteo{
+        li{
+            padding: 1rem;
+            font-size: 1rem;
+        }
     }
 
     /* footer */

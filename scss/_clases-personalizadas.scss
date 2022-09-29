@@ -10,13 +10,6 @@
         text-align: center;
         padding: 3rem;
     }
-    .punteo{
-        grid-area: punteo;
-        li{
-            padding: 0 0 2rem 2rem;
-            font-size: 1.2rem;
-        }
-    }
     div{
         grid-area: img;
         display: flex;
@@ -27,5 +20,11 @@
             border-radius: 10px;
             padding-top: 50px;
         }
+    }
+}
+.punteo{
+    grid-area: punteo;
+    li{
+        font-size: 1.2rem;
     }
 }

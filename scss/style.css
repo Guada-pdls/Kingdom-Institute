@@ -24,16 +24,6 @@ main {
   min-height: 600px;
   font-family: "Montserrat";
 }
-main .centrado {
-  text-align: center;
-  padding: 20px;
-}
-main .bold {
-  font-weight: bold;
-}
-main .padt {
-  padding-top: 1.5rem;
-}
 main p {
   font-size: 1.1rem;
   padding: 40px;
@@ -47,82 +37,7 @@ main h4 {
   padding-left: 2rem;
   padding-top: 1rem;
 }
-main .carousel {
-  padding: 2rem;
-}
-main .datos {
-  display: flex;
-  justify-content: space-between;
-}
-main .datos .promos {
-  font-size: 1.2rem;
-  padding: 1.5rem;
-  border-right: 1px solid #fff;
-  margin: 0;
-}
-main .datos .promos .descuento {
-  max-width: 120px;
-}
-main .datos .promos li {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0.4rem;
-  text-align: right;
-}
-main .datos .promos li img {
-  padding-left: 1.5rem;
-}
-main .datos img {
-  max-height: 350px;
-  border-radius: 50px;
-  padding: 5px;
-  padding-right: 10px;
-  display: flex;
-  align-self: center;
-}
-main .datos .punteo {
-  font-size: 1.2rem;
-  padding-left: 4rem;
-  list-style-type: disc;
-  padding-top: 40px;
-}
-main .datos .punteo li {
-  padding: 1.5rem 1.2rem;
-  padding-right: 5rem;
-  text-align: left;
-}
-main .icons ul {
-  list-style-type: none;
-  font-family: "Montserrat";
-  display: flex;
-  justify-content: center;
-}
-main .icons ul li {
-  display: flex;
-  align-items: center;
-  padding: 0.6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-main .icons .icon {
-  min-width: 40px;
-  margin-right: 1rem;
-}
-main .icons .borde {
-  border-left: #fff solid 1px;
-  border-right: #fff solid 1px;
-}
-main .examenes, main .cursos {
-  padding: 1rem 2rem;
-}
-main .examenes .sangria, main .cursos .sangria {
-  padding-left: 2rem;
-}
-main .examenes div ul li, main .cursos div ul li {
+main div ul li {
   padding: 0 0 20px 30px;
 }
 main section div h3 {
@@ -131,24 +46,116 @@ main section div h3 {
   justify-content: center;
 }
 
+.centrado {
+  text-align: center;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.padt {
+  padding-top: 1.5rem;
+}
+
+.carousel {
+  padding: 2rem;
+}
+
+.datos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promos {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  border-right: 1px solid #fff;
+  margin: 0;
+}
+.promos li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.4rem;
+  text-align: right;
+}
+.promos li img {
+  padding-left: 1.5rem;
+}
+
+.descuento {
+  max-width: 100px;
+}
+
+.punteo {
+  font-size: 1.2rem;
+  padding-left: 4rem;
+  list-style-type: disc;
+  padding-top: 50px;
+}
+.punteo li {
+  padding: 1rem 4rem 2rem 2rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.icons ul {
+  list-style-type: none;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+}
+.icons ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  min-width: 40px;
+  margin-right: 1rem;
+}
+
+.borde {
+  border-left: #fff solid 1px;
+  border-right: #fff solid 1px;
+}
+
+.examenes, .cursos {
+  padding: 1rem 2rem;
+}
+
+.sangria {
+  padding-left: 2rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .logo {
+
+.logo {
   max-width: 150px;
   padding: 5%;
   transition: 1s;
 }
-nav .logo:hover {
+.logo:hover {
   transform: scale(0.9);
 }
-nav .enlaces {
+
+.enlaces {
   display: flex;
   justify-content: flex-end;
 }
-nav .enlaces a {
+.enlaces a {
   font-family: "Quicksand";
   font-size: 1rem;
   list-style: none;
@@ -159,7 +166,7 @@ nav .enlaces a {
   transition: 0.5s;
   color: #000;
 }
-nav .enlaces a:hover {
+.enlaces a:hover {
   color: #ffffff;
   background-color: rgba(6, 11, 90, 0.8784313725);
 }
@@ -172,11 +179,12 @@ footer ul li {
   display: inline-block;
   margin: 10px;
 }
-footer ul li .icon-peque {
+
+.icon-peque {
   width: 40px;
   transition: 1s;
 }
-footer ul li .icon-peque:hover {
+.icon-peque:hover {
   transform: scale(0.9);
 }
 
@@ -191,13 +199,6 @@ footer ul li .icon-peque:hover {
   text-align: center;
   padding: 3rem;
 }
-.section1 .punteo {
-  grid-area: punteo;
-}
-.section1 .punteo li {
-  padding: 0 0 2rem 2rem;
-  font-size: 1.2rem;
-}
 .section1 div {
   grid-area: img;
   display: flex;
@@ -210,12 +211,20 @@ footer ul li .icon-peque:hover {
   padding-top: 50px;
 }
 
+.punteo {
+  grid-area: punteo;
+}
+.punteo li {
+  font-size: 1.2rem;
+}
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.galeria .marco {
+
+.marco {
   width: 360px;
   height: 260px;
   background-color: #fff;
@@ -225,10 +234,11 @@ footer ul li .icon-peque:hover {
   justify-content: center;
   transition: 2s;
 }
-.galeria .marco:hover {
+.marco:hover {
   transform: scale(1.3);
 }
-.galeria .foto {
+
+.foto {
   max-width: 360px;
   max-height: 260px;
 }
@@ -238,7 +248,7 @@ footer ul li .icon-peque:hover {
   .enlaces {
     justify-content: center;
   }
-  .enlaces div a {
+  div a {
     display: flex;
     justify-content: center;
   }
@@ -251,7 +261,7 @@ footer ul li .icon-peque:hover {
     flex-direction: column;
     margin-bottom: 6vh;
   }
-  .datos .descuento {
+  .descuento {
     width: 6rem;
   }
   .punteo li {
@@ -269,7 +279,7 @@ footer ul li .icon-peque:hover {
     border: none;
   }
   .carousel {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
   /* Galería */
   .marco {
@@ -277,7 +287,7 @@ footer ul li .icon-peque:hover {
     height: 160px;
     margin: 30px 40px;
   }
-  .marco .foto {
+  .foto {
     max-width: 260px;
     max-height: 160px;
   }
@@ -308,7 +318,7 @@ footer ul li .icon-peque:hover {
   .promos li {
     font-size: 1.1rem;
   }
-  .promos .descuento {
+  .descuento {
     max-width: 100px;
   }
   .centrado p {
@@ -327,9 +337,8 @@ footer ul li .icon-peque:hover {
     height: 300px;
     margin: 30px 40px;
   }
-  .marco .foto {
-    max-width: 400px;
-    max-height: 300px;
+  .descuento {
+    max-width: 100px;
   }
   /* grid clases personalizadas */
   .section1 {
@@ -380,7 +389,7 @@ footer ul li .icon-peque:hover {
     height: 200px;
     margin: 30px 40px;
   }
-  .marco .foto {
+  .foto {
     max-width: 300px;
     max-height: 200px;
   }

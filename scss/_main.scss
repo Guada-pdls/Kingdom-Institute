@@ -3,16 +3,6 @@ main{
     color: white;
     min-height: 600px;
     font-family: "Montserrat";
-    .centrado{
-        text-align: center;
-        padding: 20px;
-    }
-    .bold{
-        font-weight: bold;
-    }
-    .padt{
-        padding-top: 1.5rem;
-    }
     p{
         font-size: 1.1rem;
         padding: 40px;
@@ -26,87 +16,10 @@ main{
         padding-left: 2rem;
         padding-top: 1rem;
     }
-    .carousel{
-        padding: 2rem;
-    }
-    .datos{
-        display: flex;
-        justify-content: space-between;
-        .promos{
-            font-size: 1.2rem;
-            padding: 1.5rem;
-            border-right: 1px solid #fff;
-            margin: 0;
-            .descuento{
-                max-width: 120px;
-            }
-            li{
-                list-style-type: none;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                padding: 0.4rem;
-                text-align: right;
-                img{
-                    padding-left: 1.5rem;
-                }
-            }
-        }
-        img{
-            max-height: 350px;
-            border-radius: 50px;
-            padding: 5px;
-            padding-right: 10px;
-            display: flex;
-            align-self: center;
-        }
-        .punteo{
-            font-size: 1.2rem;
-            padding-left: 4rem;
-            list-style-type: disc;
-            padding-top: 40px;
-            li{
-                padding: 1.5rem 1.2rem;
-                padding-right: 5rem;
-                text-align: left;
-            }
-        }
-    }
-    .icons {
+    div{
         ul{
-        list-style-type: none;
-        font-family: "Montserrat";
-        display: flex;
-        justify-content: center;
-        li{
-            display: flex;
-            align-items: center;
-            padding: 0.6rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-            }
-        }
-        .icon{
-            min-width: 40px;
-            margin-right: 1rem;
-        }
-        .borde{
-            border-left: #fff solid 1px;
-            border-right: #fff solid 1px;
-        }
-    }
-    .examenes, .cursos{
-        padding: 1rem 2rem;
-        .sangria{
-            padding-left: 2rem;
-        }
-        div{
-            ul{
-                li{
-                    padding: 0 0 20px 30px;
-                }
+            li{
+                padding: 0 0 20px 30px;
             }
         }
     }
@@ -115,4 +28,83 @@ main{
         display: flex;
         justify-content: center;
     }
+}
+.centrado{
+    text-align: center;
+    padding: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+.padt{
+    padding-top: 1.5rem;
+}
+.carousel{
+    padding: 2rem;
+}
+.datos{
+    display: flex;
+    justify-content: space-between;
+}
+.promos{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-right: 1px solid #fff;
+    margin: 0;
+    li{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.4rem;
+        text-align: right;
+        img{
+            padding-left: 1.5rem;
+        }
+    }
+}
+.descuento{
+    max-width: 100px;
+}
+.punteo{
+    font-size: 1.2rem;
+    padding-left: 4rem;
+    list-style-type: disc;
+    padding-top: 50px;
+    li{
+        padding: 1rem 4rem 2rem 2rem;
+        margin-left: 1rem;
+        text-align: left;
+    }
+}
+.icons {
+    ul{
+    list-style-type: none;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    li{
+        display: flex;
+        align-items: center;
+        padding: 0.6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        }
+    }
+}
+.icon{
+    min-width: 40px;
+    margin-right: 1rem;
+}
+.borde{
+    border-left: #fff solid 1px;
+    border-right: #fff solid 1px;
+}
+.examenes, .cursos{
+    padding: 1rem 2rem;
+}
+.sangria{
+    padding-left: 2rem;
 }
