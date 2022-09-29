@@ -7,7 +7,7 @@ nav{
         padding: 5%;
         transition: 1s;
         &:hover{
-            transform: scale(0.9);
+            @include hovers(0.9);
         } 
     }
     .enlaces{
@@ -25,7 +25,7 @@ nav{
             color: #000;
             &:hover{
                 color: #ffffff;
-                background-color: #060b5ae0;
+                background-color: $blue;
             }
         }
     }

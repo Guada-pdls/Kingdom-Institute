@@ -9,7 +9,7 @@ footer{
                 width: 40px;
                 transition: 1s;
                 &:hover{
-                    transform: scale(0.9);
+                    @include hovers(0.9);
                 }
             }
         }

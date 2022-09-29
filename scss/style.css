@@ -226,7 +226,7 @@ footer ul li .icon-peque:hover {
   transition: 2s;
 }
 .galeria .marco:hover {
-  transform: scale(1.3) !important;
+  transform: scale(1.3);
 }
 .galeria .foto {
   max-width: 360px;
@@ -269,7 +269,7 @@ footer ul li .icon-peque:hover {
     border: none;
   }
   .carousel {
-    padding: 1rem 0;
+    padding: 1rem 0rem;
   }
   /* Galería */
   .marco {
