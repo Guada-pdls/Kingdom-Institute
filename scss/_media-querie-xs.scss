@@ -8,6 +8,11 @@
         font-size: 1.1rem;
         padding: 10px;
     }
+    main{
+        p{
+            padding: 10px;
+        }
+    }
     .promos{
         padding: 0.9rem;
         li{
@@ -19,7 +24,7 @@
         }
     }
     .punteo{
-        padding-left: 25px;
+        padding-left: 20px;
         li{
             padding: 0.8rem;
             font-size: 1.1rem;
@@ -30,6 +35,11 @@
             li{
                 padding: 1rem 0.3rem;
             }
+        }
+    }
+    .section1{
+        h3{
+            padding: 10px;
         }
     }
 

@@ -19,7 +19,7 @@ a{
 $blue: #060b5ae0;
 
 @mixin hovers ($size){
-    transform: scale($size)
+    transform: scale($size) !important;
 }
 
 @import './main';
