@@ -1,0 +1,30 @@
+.section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr;
+    grid-template-areas: 
+    "title img"
+    "punteo img";
+    h3{
+        grid-area: title;
+        text-align: center;
+        padding: 3rem;
+    }
+    div{
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 600px;
+            border-radius: 10px;
+            padding-top: 50px;
+        }
+    }
+}
+.punteo{
+    grid-area: punteo;
+    li{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,62 @@
+// media querie sm
+@media screen and (max-width: 768px){
+
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .promos{
+        padding: 1rem;
+        li{
+            font-size: 1.1rem;
+        }
+    }
+    .descuento{
+        max-width: 100px;
+    }
+    .centrado {
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    .punteo{
+        padding-top: 20px;
+        padding-left: 3rem;
+    }
+    .carousel{
+        padding: 1rem 0;
+    }
+
+    /* Galería */
+
+    .marco{
+        width: 400px;
+        height: 300px;
+        margin: 30px 40px;
+    }
+    .descuento{
+        max-width: 100px;
+    }
+
+    /* grid clases personalizadas */
+
+    .section1{
+        grid-template-rows: 0.1fr 0.7fr 0.8fr;
+        div{
+            img{
+                max-width: 390px;
+                padding-bottom: 50px;
+            }
+        }
+        h3{
+            padding-top: 3rem;
+        }
+    }
+    .punteo{
+        li{
+            padding: 1.6rem;
+        } 
+    }
+}

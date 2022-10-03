@@ -1,0 +1,430 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(../font/Quicksand/static/Quicksand-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/static/Montserrat-Regular.ttf);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  background-color: rgba(6, 11, 90, 0.8784313725);
+  color: white;
+  min-height: 600px;
+  font-family: "Montserrat";
+}
+main p {
+  font-size: 1.1rem;
+  padding: 40px;
+}
+main h3 {
+  font-family: "Quicksand";
+  font-size: 1.6rem;
+}
+main h4 {
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+main div ul li {
+  padding: 15px 0 10px 10px;
+  margin-left: 10px;
+}
+main section div h3 {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.centrado {
+  text-align: center;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.padt {
+  padding-top: 1.5rem;
+}
+
+.carousel {
+  padding: 2rem;
+}
+
+.datos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promos {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  border-right: 1px solid #fff;
+  margin: 0;
+}
+.promos li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.4rem;
+  text-align: right;
+}
+.promos li img {
+  padding-left: 1.5rem;
+}
+
+.descuento {
+  max-width: 100px;
+}
+
+.punteo {
+  font-size: 1.2rem;
+  padding-left: 4rem;
+  list-style-type: disc;
+  padding-top: 50px;
+}
+.punteo li {
+  padding: 1rem 4rem 2rem 2rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.icons ul {
+  list-style-type: none;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+}
+.icons ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  min-width: 40px;
+  margin-right: 1rem;
+}
+
+.borde {
+  border-left: #fff solid 1px;
+  border-right: #fff solid 1px;
+}
+
+.examenes, .cursos {
+  padding: 1rem 2rem;
+}
+
+.sangria {
+  padding-left: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px;
+  padding: 5%;
+  transition: 1s;
+}
+.logo:hover {
+  transform: scale(0.9) !important;
+}
+
+.enlaces {
+  display: flex;
+  justify-content: flex-end;
+}
+.enlaces a {
+  font-family: "Quicksand";
+  font-size: 1rem;
+  list-style: none;
+  margin: 1rem;
+  display: inline-block;
+  padding: 0.4rem;
+  border-radius: 5rem;
+  transition: 0.5s;
+  color: #000;
+}
+.enlaces a:hover {
+  color: #ffffff;
+  background-color: rgba(6, 11, 90, 0.8784313725);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.icon-peque {
+  width: 40px;
+  transition: 1s;
+}
+.icon-peque:hover {
+  transform: scale(0.9) !important;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1.5fr;
+  grid-template-areas: "title img" "punteo img";
+}
+.section1 h3 {
+  grid-area: title;
+  text-align: center;
+  padding: 3rem;
+}
+.section1 div {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 div img {
+  max-width: 600px;
+  border-radius: 10px;
+  padding-top: 50px;
+}
+
+.punteo {
+  grid-area: punteo;
+}
+.punteo li {
+  font-size: 1.2rem;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.marco {
+  width: 360px;
+  height: 260px;
+  background-color: #fff;
+  margin: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+.marco:hover {
+  transform: scale(1.3) !important;
+}
+
+.foto {
+  max-width: 360px;
+  max-height: 260px;
+}
+
+@media screen and (max-width: 992px) {
+  /* header */
+  .enlaces {
+    justify-content: center;
+  }
+  div a {
+    display: flex;
+    justify-content: center;
+  }
+  /* main */
+  h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .datos {
+    flex-direction: column;
+    margin-bottom: 6vh;
+  }
+  .descuento {
+    width: 6rem;
+  }
+  .punteo li {
+    padding: 4vw;
+  }
+  .icons ul {
+    padding: 5vw 10vh;
+    border-top: #fff 1px solid;
+    flex-direction: column;
+  }
+  .icons ul li {
+    margin: 20px 0;
+  }
+  .borde, .promos {
+    border: none;
+  }
+  .carousel {
+    padding: 1rem 0;
+  }
+  /* Galería */
+  .marco {
+    width: 260px;
+    height: 160px;
+    margin: 30px 40px;
+  }
+  .foto {
+    max-width: 260px;
+    max-height: 160px;
+  }
+  /* grid clases personalizadas */
+  .section1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.2fr 1fr;
+    grid-template-areas: "title" "punteo" "img" "img";
+  }
+  .section1 h3 {
+    padding-top: 4rem;
+  }
+  .section1 div img {
+    max-width: 600px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .promos {
+    padding: 1rem;
+  }
+  .promos li {
+    font-size: 1.1rem;
+  }
+  .descuento {
+    max-width: 100px;
+  }
+  .centrado p {
+    font-size: 1.1rem;
+  }
+  .punteo {
+    padding-top: 20px;
+    padding-left: 3rem;
+  }
+  .carousel {
+    padding: 1rem 0;
+  }
+  /* Galería */
+  .marco {
+    width: 400px;
+    height: 300px;
+    margin: 30px 40px;
+  }
+  .descuento {
+    max-width: 100px;
+  }
+  /* grid clases personalizadas */
+  .section1 {
+    grid-template-rows: 0.1fr 0.7fr 0.8fr;
+  }
+  .section1 div img {
+    max-width: 390px;
+    padding-bottom: 50px;
+  }
+  .section1 h3 {
+    padding-top: 3rem;
+  }
+  .punteo li {
+    padding: 1.6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4, p {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  main p {
+    padding: 10px;
+  }
+  .promos {
+    padding: 0.9rem;
+  }
+  .promos li {
+    font-size: 1rem;
+  }
+  .promos li img {
+    padding-left: 1rem;
+    width: 5rem;
+  }
+  .punteo {
+    padding-left: 20px;
+  }
+  .punteo li {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+  .icons ul li {
+    padding: 1rem 0.3rem;
+  }
+  .section1 h3 {
+    padding: 10px;
+  }
+  /* Galería */
+  .marco {
+    width: 300px;
+    height: 200px;
+    margin: 30px 40px;
+  }
+  .foto {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  /* grid clases personalizadas */
+  .section1 {
+    grid-template-rows: 0.1fr 0.7fr 0.6fr;
+  }
+  .section1 h3 {
+    padding-top: 2rem;
+  }
+  .section1 div img {
+    max-width: 260px;
+  }
+  .punteo li {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  /* footer */
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul li {
+    display: inline-block;
+    margin: 8px;
+  }
+  footer ul li .icon-peque {
+    width: 35px;
+    transition: 1s;
+  }
+}/*# sourceMappingURL=style.css.map */
