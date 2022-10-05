@@ -61,7 +61,7 @@ main section div h3 {
 }
 
 .carousel {
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .datos {
@@ -88,12 +88,13 @@ main section div h3 {
 }
 
 .descuento {
-  max-width: 100px;
+  max-width: 90px;
 }
 
 .punteo {
   font-size: 1.2rem;
-  padding-left: 4rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
   list-style-type: disc;
   padding-top: 50px;
 }
@@ -176,6 +177,9 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
+footer ul {
+  margin-bottom: 0;
+}
 footer ul li {
   display: inline-block;
   margin: 10px;
@@ -244,6 +248,90 @@ footer ul li {
   max-height: 260px;
 }
 
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  width: 38%;
+  margin: auto 30%;
+}
+form h4 {
+  color: rgba(6, 11, 90, 0.8784313725);
+  text-align: center;
+  font-weight: 800;
+  padding: 20px 0 15px 0;
+  margin: 0 15px;
+}
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+form div input {
+  width: 100%;
+}
+form input {
+  margin: 18px;
+  border: none;
+  border-bottom: rgba(6, 11, 90, 0.8784313725) 1px solid;
+}
+form input::-moz-placeholder {
+  color: #000;
+}
+form input:-ms-input-placeholder {
+  color: #000;
+}
+form input::placeholder {
+  color: #000;
+}
+form select {
+  margin: 18px;
+  border: none;
+}
+form select::-moz-placeholder {
+  color: #000;
+}
+form select:-ms-input-placeholder {
+  color: #000;
+}
+form select::placeholder {
+  color: #000;
+}
+form .button {
+  margin: 18px;
+  border: none;
+  padding: 5px;
+  background-color: rgba(6, 11, 90, 0.8784313725);
+  color: #fff;
+  border-radius: 5px;
+}
+form .button::-moz-placeholder {
+  color: #000;
+}
+form .button:-ms-input-placeholder {
+  color: #000;
+}
+form .button::placeholder {
+  color: #000;
+}
+form textarea {
+  margin: 18px;
+  border: rgba(6, 11, 90, 0.8784313725) 1px solid;
+}
+
+.red {
+  color: #b22424;
+  font-weight: 600;
+  margin: auto 18px;
+}
+
+.green {
+  color: #29aa29;
+  font-weight: 600;
+  margin: auto 18px;
+}
+
 @media screen and (max-width: 992px) {
   /* header */
   .enlaces {
@@ -305,6 +393,11 @@ footer ul li {
     max-width: 600px;
     padding-bottom: 50px;
   }
+  /* form de contacto */
+  form {
+    width: 60%;
+    margin: auto 20%;
+  }
 }
 @media screen and (max-width: 768px) {
   h3 {
@@ -358,6 +451,11 @@ footer ul li {
   }
   .punteo li {
     padding: 1.6rem;
+  }
+  /* form de contacto */
+  form {
+    width: 70%;
+    margin: auto 15%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -430,5 +528,13 @@ footer ul li {
   footer ul li .icon-peque {
     width: 35px;
     transition: 1s;
+  }
+  /* form de contacto */
+  form {
+    width: 80%;
+    margin: auto 10%;
+  }
+  form input {
+    margin: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

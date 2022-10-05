@@ -41,7 +41,7 @@ main{
     padding-top: 1.5rem;
 }
 .carousel{
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 .datos{
     display: flex;
@@ -65,11 +65,12 @@ main{
     }
 }
 .descuento{
-    max-width: 100px;
+    max-width:90px;
 }
 .punteo{
     font-size: 1.2rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
     list-style-type: disc;
     padding-top: 50px;
     li{

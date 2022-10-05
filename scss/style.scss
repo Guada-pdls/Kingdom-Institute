@@ -21,12 +21,21 @@ $blue: #060b5ae0;
 @mixin hovers ($size){
     transform: scale($size) !important;
 }
+@mixin btn (){
+    margin: 18px;
+    border: none;
+    &::placeholder{
+        color: #000
+        }
+    }
+
 
 @import './main';
 @import './header';
 @import './footer';
 @import './clases-personalizadas';
 @import './galeria';
+@import './contacto';
 @import './media-querie-md';
 @import './media-querie-sm';
 @import './media-querie-xs';

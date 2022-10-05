@@ -1,0 +1,52 @@
+form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    width: 38%;
+    margin: auto 30%;
+    h4{
+        color: $blue;
+        text-align: center;
+        font-weight: 800;
+        padding: 20px 0 15px 0;
+        margin: 0 15px;
+
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        input{
+            width: 100%;
+        }
+    }
+    input{
+        @include btn();
+        border-bottom: $blue 1px solid;
+    }
+    select{
+        @include btn();    
+    }
+    .button{
+        @include btn();
+        padding: 5px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 5px;
+    }
+    textarea{
+        margin: 18px;
+        border: $blue 1px solid;
+    }
+}
+.red{
+    color: #b22424;
+    font-weight: 600;
+    margin: auto 18px;
+}
+.green{
+    color: #29aa29;
+    font-weight: 600;
+    margin: auto 18px;
+}
