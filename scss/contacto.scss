@@ -34,12 +34,18 @@ form{
         background-color: $blue;
         color: #fff;
         border-radius: 5px;
-    }
+        transition: 0.4s;
+        &:hover{
+                box-shadow: 5px 5px 5px #959595;
+                @include hovers(1.05);
+            }
+        }
     textarea{
         margin: 18px;
         border: $blue 1px solid;
+        }
     }
-}
+
 .red{
     color: #b22424;
     font-weight: 600;

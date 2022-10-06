@@ -305,6 +305,7 @@ form .button {
   background-color: rgba(6, 11, 90, 0.8784313725);
   color: #fff;
   border-radius: 5px;
+  transition: 0.4s;
 }
 form .button::-moz-placeholder {
   color: #000;
@@ -314,6 +315,10 @@ form .button:-ms-input-placeholder {
 }
 form .button::placeholder {
   color: #000;
+}
+form .button:hover {
+  box-shadow: 5px 5px 5px #959595;
+  transform: scale(1.05) !important;
 }
 form textarea {
   margin: 18px;
