@@ -50,20 +50,20 @@ document.getElementById('form').addEventListener('submit', function(event) {
        resultado.innerHTML = error[1]
        resultado.classList.add('red')
    } else {
-       resultado.classList.remove('red');
-       resultado.innerHTML = ""
-       btn.value = 'Enviando...';
+        resultado.classList.remove('red');
+        resultado.innerHTML = ""
+        btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_rrq7at7';
+        const serviceID = 'default_service';
+        const templateID = 'template_rrq7at7';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Enviar';
-      alert('Mensaje enviado correctamente');
-    }, (err) => {
-      btn.value = 'Enviar';
-      alert(JSON.stringify(err));
-    });
-   };
+        emailjs.sendForm(serviceID, templateID, this)
+         .then(() => {
+           btn.value = 'Enviar';
+           alert('Mensaje enviado correctamente');
+         }, (err) => {
+           btn.value = 'Enviar';
+           alert(JSON.stringify(err));
+         });
+        };
 });
