@@ -11,7 +11,7 @@ footer{
 }
 .icon-peque{
     width: 40px;
-    transition: 1s;
+    transition: .5s;
     &:hover{
         @include hovers(0.9);
     }

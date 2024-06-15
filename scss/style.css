@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   color: black; }
 
+ul {
+  padding: 0; }
+
 main {
   background-color: #060b5ae0;
   color: white;
@@ -89,7 +92,7 @@ main {
   list-style-type: none;
   font-family: "Montserrat";
   display: flex;
-  justify-content: center; }
+  justify-content: space-between; }
   .icons ul li {
     display: flex;
     align-items: center;
@@ -153,7 +156,7 @@ footer {
 
 .icon-peque {
   width: 40px;
-  transition: 1s; }
+  transition: .5s; }
   .icon-peque:hover {
     transform: scale(0.9) !important; }
 
@@ -224,6 +227,7 @@ form {
   form input {
     margin: 18px;
     border: none;
+    padding-left: 8px;
     border-bottom: #060b5ae0 1px solid; }
     form input::placeholder {
       color: #000; }
@@ -246,6 +250,7 @@ form {
       box-shadow: 5px 5px 5px #959595;
       transform: scale(1.05) !important; }
   form textarea {
+    padding: 4px 8px;
     margin: 18px;
     border: #060b5ae0 1px solid; }
 

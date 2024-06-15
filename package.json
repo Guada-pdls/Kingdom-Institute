@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Guada-pdls/Kingdom-Institute#readme",
   "devDependencies": {
-    "node-sass": "^7.0.3",
-    "nodemon": "^2.0.20"
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.3"
   }
 }
