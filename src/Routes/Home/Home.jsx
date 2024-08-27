@@ -1,16 +1,16 @@
 import Carousel from '../../Components/Carousel/Carousel';
 import Promotions from '../../Components/Promotions/Promotions';
-import Offerings from '../../Components/Offerings/Offerings';
 import OperatingDetails from '../../Components/OperatingDetails/OperatingDetails';
+import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
   return (
-      <>
-        <Carousel />
-        <Promotions />
-        <Offerings />
-        <OperatingDetails />
-      </>
+    <>
+      <Carousel />
+      <Promotions />
+      <OperatingDetails />
+      <Footer/>
+    </>
   );
 };
 

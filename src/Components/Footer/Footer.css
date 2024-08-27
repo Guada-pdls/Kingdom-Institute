@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.small-icon {
+    width: 40px;
+    transition: 0.5s;
+}
+
+.small-icon:hover {
+    transform: scale(0.9) !important;
+}

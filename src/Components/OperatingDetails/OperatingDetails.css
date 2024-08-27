@@ -1,0 +1,21 @@
+.details ul {
+    list-style-type: none;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: space-around;
+}
+
+.details ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28vw;
+    padding: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    min-width: 40px;
+    margin-right: 1rem;
+}

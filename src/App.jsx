@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import Home from './Routes/Home/Home.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header/Header'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   useEffect(() => {
@@ -13,7 +14,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Home />
+      <main>
+        <Home />
+      </main>
     </div>
   );
 }

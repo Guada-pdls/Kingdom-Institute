@@ -1,7 +1,8 @@
+import './Offerings.css'
+
 const Offerings = () => {
   return (
-    <section className="offerings" data-aos="zoom-in">
-      <div className="col-lg-6">
+      <div className="col-lg-6 offerings" data-aos="zoom-in">
         <h3>OFRECEMOS</h3>
         <ul>
           <li>Clases personalizadas</li>
@@ -9,7 +10,6 @@ const Offerings = () => {
           <li>Nuestros exámenes AT5, AT6 o Audeppi Pre First te permiten <span>exonerar Inglés en 5to y 6to de bachillerato</span>.</li>
         </ul>
       </div>
-    </section>
   );
 };
 

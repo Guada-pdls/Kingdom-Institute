@@ -1,0 +1,27 @@
+.data {
+    display: flex;
+}
+
+.promotions {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-right: 1px solid #fff;
+    margin: 0;
+}
+
+.promotions li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.4rem;
+    text-align: right;
+}
+
+.promotions li img {
+    padding-left: 1.5rem;
+}
+
+.discounts {
+    max-width: 90px;
+}
