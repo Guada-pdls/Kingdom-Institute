@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="./index.html">
+        <Link className="navbar-brand" to="/">
           <img src="./images/logo.png" alt="Logo del instituto" className="logo" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,11 +20,11 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse links" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link" href="./pages/cursos.html">CURSOS</a>
-            <a className="nav-link" href="./pages/clases_personalizadas.html">CLASES PERSONALIZADAS</a>
-            <a className="nav-link" href="./pages/examenes.html">EXÁMENES</a>
-            <a className="nav-link" href="./pages/galeria.html">GALERÍA</a>
-            <a className="nav-link" href="./pages/contacto.html">CONTACTO</a>
+            <Link className="nav-link" to="/courses">CURSOS</Link>
+            <Link className="nav-link" to="/customized-classes">CLASES PERSONALIZADAS</Link>
+            <Link className="nav-link" to="/exams">EXÁMENES</Link>
+            <Link className="nav-link" to="/gallery">GALERÍA</Link>
+            <Link className="nav-link" to="/contact">CONTACTO</Link>
           </div>
         </div>
       </div>

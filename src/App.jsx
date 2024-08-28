@@ -1,10 +1,20 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import Home from './Routes/Home/Home.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Components/Header/Header'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './Routes/Home/Home.jsx';
+import Contact from './Routes/Contact/Contact.jsx';
+import Courses from './Routes/Courses/Courses.jsx';
+import CustomizedClasses from './Routes/CustomizedClasses/CustomizedClasses.jsx';
+import Exams from './Routes/Exams/Exams.jsx';
+import Gallery from './Routes/Gallery/Gallery.jsx';
+
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
   useEffect(() => {
@@ -12,12 +22,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Header/>
+    <Router>
+      <Header />
       <main>
-        <Home />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/courses' element={<Courses />} />
+          <Route path='/customized-classes' element={<CustomizedClasses />} />
+          <Route path='/exams' element={<Exams />} />
+          <Route path='/gallery' element={<Gallery />} />
+        </Routes>
       </main>
-    </div>
+      <Footer />
+    </Router>
   );
 }
 
