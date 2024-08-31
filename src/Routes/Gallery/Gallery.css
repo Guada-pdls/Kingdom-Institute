@@ -1,0 +1,35 @@
+.gallery {
+    margin: 0 10vw;
+    padding: 6vw 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduce el tamaño mínimo */
+    gap: 16px; /* Disminuye el espacio entre elementos */
+  }
+  
+  .item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .horizontal {
+    grid-column: span 1.5; /* Las imágenes horizontales ocupan dos columnas */
+    grid-row: span 1;
+  }
+  
+  .vertical {
+    grid-row: span 2; /* Las imágenes verticales ocupan dos filas */
+    grid-column: span 1;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra todo el espacio disponible */
+    border-radius: 5px; /* Agrega un borde redondeado si lo deseas */
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Ajusta el tamaño en pantallas pequeñas */
+    }
+  }
