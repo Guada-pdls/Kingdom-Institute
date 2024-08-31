@@ -1,10 +1,7 @@
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../index.css';
 import ExamDetail from '../../Components/ExamDetail/ExamDetail';
-
-AOS.init();
 
 const Exams = () => {
   return (

@@ -1,0 +1,40 @@
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr;
+    grid-template-areas:
+        "title img"
+        "lis img";
+}
+
+.section1 h3 {
+    grid-area: title;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}
+
+.section1 div {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 div img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.offerings {
+    grid-area: lis;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.offerings li {
+    font-size: 1.1rem;
+    padding: 1rem 4rem 1.5rem 1rem;
+    margin-left: 2rem;
+}
