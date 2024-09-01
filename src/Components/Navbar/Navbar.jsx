@@ -24,6 +24,7 @@ const Navbar = () => {
             <Link className="nav-link" to="/customized-classes">CLASES PERSONALIZADAS</Link>
             <Link className="nav-link" to="/exams">EXÁMENES</Link>
             <Link className="nav-link" to="/gallery">GALERÍA</Link>
+            <Link className="nav-link" to="/placement-test">PLACEMENT TEST</Link>
             <Link className="nav-link" to="/contact">CONTACTO</Link>
           </div>
         </div>

@@ -15,6 +15,8 @@ import Gallery from './Routes/Gallery/Gallery.jsx';
 
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer.jsx';
+import PlacementTest from './Routes/PlacementTest/PlacementTest.jsx';
+import TestPart from './Routes/TestPart/TestPart.jsx';
 
 function App() {
   useEffect(() => {
@@ -32,6 +34,8 @@ function App() {
           <Route path='/customized-classes' element={<CustomizedClasses />} />
           <Route path='/exams' element={<Exams />} />
           <Route path='/gallery' element={<Gallery />} />
+          <Route path='/placement-test' element={<PlacementTest />} />
+          <Route path='/placement-test/:part' element={<TestPart />} />
         </Routes>
       </main>
       <Footer />

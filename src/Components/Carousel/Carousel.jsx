@@ -9,7 +9,7 @@ const Carousel = () => {
             <img src="./images/Banner.jpg" className="d-block w-100 slide" alt="Banner instituto" />
           </div>
           <div className="carousel-item">
-            <img src="./images/test_de_nivel.webp" className="d-block w-100 slide" alt="Niveles" />
+            <img src="./images/levels.webp" className="d-block w-100 slide" alt="Niveles" />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
