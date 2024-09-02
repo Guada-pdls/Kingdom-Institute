@@ -33,7 +33,7 @@ main {
     color: white;
     min-height: 600px;
     font-family: "Montserrat";
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 main p {

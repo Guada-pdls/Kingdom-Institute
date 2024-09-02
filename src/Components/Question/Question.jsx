@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
+import './Question.css'
+
 const Question = ({ question, onSelect }) => (
   <div className="question">
-    <h3>{question.question}</h3>
+    <h5>{question.id}&#41; {question.question}</h5>
     <ul>
       {question.options.map(option => (
         <li key={option.letter}>

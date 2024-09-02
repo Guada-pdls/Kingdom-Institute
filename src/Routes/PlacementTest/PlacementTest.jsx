@@ -8,14 +8,14 @@ const PlacementTest = () => {
   useEffect(() => {
     const savedPart = localStorage.getItem('currentPart');
     if (savedPart) {
-      navigate(`/?part=${savedPart}`);
+      navigate(`test/${savedPart}`);
     }
   }, [navigate]);
 
   const startTest = () => {
     localStorage.removeItem('currentPart'); 
     localStorage.removeItem('scores'); 
-    navigate('/placement-test/?part=1');
+    navigate('test/1');
   };
 
   return (

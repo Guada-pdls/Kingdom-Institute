@@ -1,0 +1,41 @@
+.test {
+    color: black;
+    padding: 2rem;
+}
+
+.test .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.test .navigation h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.test .navigation button {
+    background-color: #0f1bcce0;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.test .navigation button.disabled {
+    background-color: #ccc;
+    /* Gris para el botón desactivado */
+    cursor: not-allowed;
+    /* Cambia el cursor para botones desactivados */
+}
+
+.test .navigation button:disabled {
+    background-color: #ccc;
+}

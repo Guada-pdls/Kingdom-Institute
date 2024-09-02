@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="./images/logo.png" alt="Logo del instituto" className="logo" />
+          <img src="/images/logo.png" alt="Logo del instituto" className="logo" />
         </Link>
         <button
           className="navbar-toggler"

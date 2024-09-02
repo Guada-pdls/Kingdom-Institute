@@ -1,0 +1,24 @@
+.question h5 {
+    margin: 10px 10px 0 10px;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.question ul {
+    margin-top: 12px;
+}
+
+.question ul li {
+    padding-top: .8rem;
+    padding-bottom: 0;
+}
+
+.test ul li {
+    list-style-type: none;
+}
+
+.test ul li label input {
+    margin-right: 0.4rem;
+}
