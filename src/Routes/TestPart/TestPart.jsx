@@ -4,6 +4,7 @@ import Question from '../../Components/Question/Question';
 import { questions } from '../../data/questions';
 import './TestPart.css'
 import Swal from 'sweetalert2';
+import Arrow from '../../Components/Arrow/Arrow';
 
 const TestPart = () => {
   const { page } = useParams();
@@ -79,9 +80,9 @@ const TestPart = () => {
         <button
           onClick={handlePrevious}
           disabled={part === 1}
-          className={part === 1 ? 'disabled' : ''}
+          className={part === 1 ? 'disabled prev' : 'prev'}
         >
-          &#8592; Anterior
+          <Arrow color={part !== 1 ? '#bebebe' : '#2e2e2e'} direction='left' /> Anterior
         </button>
 
         <h3>Parte {part}</h3>
@@ -89,9 +90,9 @@ const TestPart = () => {
         <button
           onClick={handleNext}
           disabled={part === 4}
-          className={part === 4 ? 'disabled' : ''}
+          className={part === 4 ? 'disabled next' : 'next'}
         >
-          Siguiente &#8594;
+          Siguiente <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'}/>
         </button>
       </nav>
       {currentQuestions.map(q => (

@@ -18,22 +18,30 @@
 
 .test .navigation button {
     background-color: #0f1bcce0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border: none;
+    border-radius: 4px;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+.next {
+    padding: 10px 15px 10px 20px;
+}
+
+.prev {
+    padding: 10px 20px 10px 15px;
+}
+
 .test .navigation button.disabled {
     background-color: #ccc;
-    /* Gris para el botón desactivado */
+    color: #000;
     cursor: not-allowed;
-    /* Cambia el cursor para botones desactivados */
 }
 
 .test .navigation button:disabled {
