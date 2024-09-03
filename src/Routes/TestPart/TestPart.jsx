@@ -1,9 +1,9 @@
-// src/Routes/TestPart/TestPart.jsx
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Question from '../../Components/Question/Question';
 import { questions } from '../../data/questions';
 import './TestPart.css'
+import Swal from 'sweetalert2';
 
 const TestPart = () => {
   const { page } = useParams();
@@ -37,19 +37,42 @@ const TestPart = () => {
     localStorage.setItem('scores', JSON.stringify(scores));
 
     if (part < 4) {
-      navigate(`/page/${part + 1}`);
+      navigate(`/placement-test/test/${part + 1}`);
     } else {
-      alert('Test completado');
+      const finalLevel = englishLevel(scores);
+      Swal.fire({
+        title: "Good job!",
+        text: `Tu nivel de inglés es: ${finalLevel}`,
+        icon: "success"
+      });
       localStorage.removeItem('currentPart');
+      localStorage.removeItem('scores');
     }
   };
 
   const handlePrevious = () => {
     if (part > 1) {
-      navigate(`/page/${part - 1}`);
+      navigate(`/placement-test/test/${part - 1}`);
     }
   };
 
+  const englishLevel = (scores) => {
+    let totalScore = 0;
+    let partsCount = 0;
+  
+    for (let part in scores) {
+      totalScore += scores[part];
+      partsCount++;
+    }
+  
+    const averageScore = totalScore / partsCount;
+  
+    if (averageScore >= 85) return 'B2';
+    if (averageScore >= 70) return 'B1';
+    if (averageScore >= 50) return 'A2';
+    return 'A1';
+  };
+  
   return (
     <section className='test container'>
       <nav className="navigation">
@@ -74,7 +97,9 @@ const TestPart = () => {
       {currentQuestions.map(q => (
         <Question key={q.id} question={q} onSelect={handleSelect} />
       ))}
-      <button className='button'>{part === 4 ? 'Finalizar test' : 'Siguiente parte'} </button>
+      <button onClick={handleNext} className='button'>
+        {part === 4 ? 'Finalizar test' : 'Siguiente parte'}
+      </button>
     </section>
   );
 };
