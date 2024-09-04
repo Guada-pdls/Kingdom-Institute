@@ -39,13 +39,19 @@ const TestPart = () => {
 
     if (part < 4) {
       navigate(`/placement-test/test/${part + 1}`);
+      window.scrollTo(0, 0)
     } else {
       const finalLevel = englishLevel(scores);
       Swal.fire({
         title: "Good job!",
         text: `Tu nivel de inglés es: ${finalLevel}`,
-        icon: "success"
-      });
+        icon: "success",
+        confirmButtonText: "Volver al inicio"
+      }).then(res => {
+        if (res.isConfirmed) {
+          navigate("/")
+        }
+      })
       localStorage.removeItem('currentPart');
       localStorage.removeItem('scores');
     }
@@ -95,9 +101,11 @@ const TestPart = () => {
           Siguiente <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'}/>
         </button>
       </nav>
-      {currentQuestions.map(q => (
-        <Question key={q.id} question={q} onSelect={handleSelect} />
-      ))}
+      <div className='questions'>
+        {currentQuestions.map(q => (
+          <Question key={q.id} question={q} onSelect={handleSelect} />
+        ))}
+      </div>
       <button onClick={handleNext} className='button'>
         {part === 4 ? 'Finalizar test' : 'Siguiente parte'}
       </button>

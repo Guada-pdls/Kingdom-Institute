@@ -47,3 +47,7 @@
 .test .navigation button:disabled {
     background-color: #ccc;
 }
+
+.questions {
+    margin-bottom: 2rem;
+}
