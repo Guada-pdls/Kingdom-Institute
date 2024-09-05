@@ -35,3 +35,15 @@ nav {
     color: #ffffff;
     background-color: #060b5ae0; 
 }
+
+@media screen and (max-width: 992px) {
+    .links {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    div a {
+        display: flex;
+        justify-content: center;
+    }
+}

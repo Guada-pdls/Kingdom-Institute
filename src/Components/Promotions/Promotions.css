@@ -22,6 +22,41 @@
     padding-left: 1.5rem;
 }
 
-.discounts {
-    max-width: 90px;
+/* MD */
+@media screen and (max-width: 992px) {
+    .promotions {
+        border: none;
+    }
+    
+    .data {
+        flex-direction: column;
+        margin-bottom: 6vh;
+    }
+}
+
+/* SM */
+@media screen and (max-width: 768px) {
+    .promotions {
+        padding: 1rem;
+    }
+
+    .promotions li {
+        font-size: 1.1rem;
+    }
+}
+
+/* XS */
+@media screen and (max-width: 576px) {
+    .promotions {
+        padding: 0.9rem;
+    }
+
+    .promotions li {
+        font-size: 1rem;
+    }
+
+    .promotions li img {
+        padding-left: 1rem;
+        width: 5rem;
+    }
 }

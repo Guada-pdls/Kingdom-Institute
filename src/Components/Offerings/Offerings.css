@@ -7,3 +7,39 @@
 .offerings ul li {
     padding: 0 4rem 2rem 2rem;
 }
+
+/* MD */
+@media screen and (max-width: 992px) {
+    .offerings ul li {
+        padding: 4vw;
+    }
+}
+
+/* SM */
+@media screen and (max-width: 768px) {
+    .offerings {
+        padding-top: 20px;
+        padding-left: 3rem;
+    }
+    
+    .offerings ul {
+        padding: 1rem 1rem 1rem 2rem;
+        margin-left: 12px;
+    }
+
+    .offerings ul li {
+        padding: 1.6rem;
+    }
+}
+
+/* XS */
+@media screen and (max-width: 576px) {
+    .offerings {
+        padding-left: 0;
+    }
+
+    .offerings ul li {
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+}

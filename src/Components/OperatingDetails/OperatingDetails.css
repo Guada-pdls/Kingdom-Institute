@@ -19,3 +19,44 @@
     min-width: 40px;
     margin-right: 1rem;
 }
+
+.discounts {
+    max-width: 90px;
+}
+
+/* MD */
+@media screen and (max-width: 992px) {
+    .discount {
+        width: 6rem;
+    }
+    
+    .details ul {
+        padding: 5vw 10vh;
+        border-top: #fff 1px solid;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .details ul li {
+        margin: 20px 0;
+        width: auto;
+    }
+}
+
+/* SM */
+@media screen and (max-width: 768px) {
+    .discount {
+        max-width: 100px;
+    }
+    
+    .centered p {
+        font-size: 1.1rem;
+    }
+}
+
+/* XS */
+@media screen and (max-width: 576px) {
+    .details ul li {
+        padding: 1rem 0.3rem;
+    }
+}

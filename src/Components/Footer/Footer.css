@@ -21,3 +21,26 @@ footer ul li {
 .small-icon:hover {
     transform: scale(0.9) !important;
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin: 8px;
+    }
+    
+    footer ul li .small-icon {
+        width: 35px;
+        transition: 1s;
+    }
+}

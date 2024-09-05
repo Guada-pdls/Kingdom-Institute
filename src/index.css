@@ -89,3 +89,23 @@ main section div h3 {
 .sangria {
     padding-left: 2rem;
 }
+
+@media screen and (max-width: 992px) {
+    main section div h3 {
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+    .bordered {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
