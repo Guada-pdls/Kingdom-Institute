@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section>
       <form id="form" data-aos="zoom-in-up" data-aos-duration="1000">
-        <h4>Formulario de contacto</h4>
+        <h4 className='contactTitle'>Formulario de contacto</h4>
         <input type="text" placeholder="Nombre" name="name" id="nam" required />
         <input type="text" placeholder="Apellido" name="last" id="last" required />
         <input type="email" placeholder="Correo electrónico" name="mail" id="mail" required />

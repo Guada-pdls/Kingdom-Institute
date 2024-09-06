@@ -88,7 +88,7 @@ const TestPart = () => {
           disabled={part === 1}
           className={part === 1 ? 'disabled prev' : 'prev'}
         >
-          <Arrow color={part !== 1 ? '#bebebe' : '#2e2e2e'} direction='left' /> Anterior
+          <Arrow color={part !== 1 ? '#bebebe' : '#2e2e2e'} direction='left' /> <span className='btn-text'>Anterior</span>
         </button>
 
         <h3>Parte {part}</h3>
@@ -98,7 +98,7 @@ const TestPart = () => {
           disabled={part === 4}
           className={part === 4 ? 'disabled next' : 'next'}
         >
-          Siguiente <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'}/>
+          <span className='btn-text'>Siguiente</span> <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'}/>
         </button>
       </nav>
       <div className='questions'>
