@@ -15,33 +15,26 @@ const TestPart = () => {
   const startIndex = (part - 1) * questionsPerPart;
   const currentQuestions = questions.slice(startIndex, startIndex + questionsPerPart);
 
-  const [answers, setAnswers] = useState({});
+  const savedAnswers = JSON.parse(localStorage.getItem('answers')) || {};
+  const [answers, setAnswers] = useState(savedAnswers[part] || {});
 
   useEffect(() => {
-    localStorage.setItem('currentPart', part);
-  }, [part]);
+    // Save answers when part changes
+    const storedAnswers = JSON.parse(localStorage.getItem('answers')) || {};
+    storedAnswers[part] = answers;
+    localStorage.setItem('answers', JSON.stringify(storedAnswers));
+  }, [answers, part]);
 
   const handleSelect = (id, letter) => {
     setAnswers(prev => ({ ...prev, [id]: letter }));
   };
 
   const handleNext = () => {
-    const correctAnswers = currentQuestions.filter(
-      q => answers[q.id] === q.correct_answer
-    ).length;
-
-    const score = (correctAnswers / currentQuestions.length) * 100;
-
-    // Store score of this part in ls
-    const scores = JSON.parse(localStorage.getItem('scores')) || {};
-    scores[part] = score;
-    localStorage.setItem('scores', JSON.stringify(scores));
-
     if (part < 4) {
       navigate(`/placement-test/test/${part + 1}`);
       window.scrollTo(0, 0)
     } else {
-      const finalLevel = englishLevel(scores);
+      const finalLevel = englishLevel();
       Swal.fire({
         title: "Good job!",
         text: `Tu nivel de inglés es: ${finalLevel}`,
@@ -53,7 +46,7 @@ const TestPart = () => {
         }
       })
       localStorage.removeItem('currentPart');
-      localStorage.removeItem('scores');
+      localStorage.removeItem('answers');
     }
   };
 
@@ -63,23 +56,29 @@ const TestPart = () => {
     }
   };
 
-  const englishLevel = (scores) => {
-    let totalScore = 0;
-    let partsCount = 0;
-  
-    for (let part in scores) {
-      totalScore += scores[part];
-      partsCount++;
-    }
-  
-    const averageScore = totalScore / partsCount;
-  
-    if (averageScore >= 85) return 'B2';
-    if (averageScore >= 70) return 'B1';
-    if (averageScore >= 50) return 'A2';
+  const englishLevel = () => {
+    const allAnswers = JSON.parse(localStorage.getItem('answers')) || {};
+    let totalCorrect = 0;
+    let totalQuestions = 0;
+
+    Object.values(allAnswers).forEach(partAnswers => {
+      totalQuestions += Object.keys(partAnswers).length;
+      Object.entries(partAnswers).forEach(([questionId, answer]) => {
+        const question = questions.find(q => q.id === parseInt(questionId));
+        if (question && question.correct_answer === answer) {
+          totalCorrect++;
+        }
+      });
+    });
+
+    const score = (totalCorrect / totalQuestions) * 100;
+
+    if (score >= 85) return 'B2';
+    if (score >= 70) return 'B1';
+    if (score >= 50) return 'A2';
     return 'A1';
   };
-  
+
   return (
     <section className='test container'>
       <nav className="navigation">
@@ -98,12 +97,17 @@ const TestPart = () => {
           disabled={part === 4}
           className={part === 4 ? 'disabled next' : 'next'}
         >
-          <span className='btn-text'>Siguiente</span> <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'}/>
+          <span className='btn-text'>Siguiente</span> <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'} />
         </button>
       </nav>
       <div className='questions'>
         {currentQuestions.map(q => (
-          <Question key={q.id} question={q} onSelect={handleSelect} />
+          <Question
+            key={q.id} 
+            question={q} 
+            onSelect={handleSelect} 
+            selectedAnswer={answers[q.id]}
+            />
         ))}
       </div>
       <button onClick={handleNext} className='button'>
