@@ -8,12 +8,13 @@
     margin: auto;
 }
 
-form h4 {
+.contactTitle {
     color: #060b5ae0;
     text-align: center;
     font-weight: 800;
     padding: 20px 0 15px 0;
     margin: 0 15px;
+    padding-left: 0;
 }
 
 form div {
@@ -91,7 +92,7 @@ form textarea {
         margin: auto 10%;
     }
     
-    form input {
+    form input, form textarea {
         margin: 10px;
     }
 }
