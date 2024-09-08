@@ -1,6 +1,34 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Collapse } from 'bootstrap';
+import AOS from 'aos';
 
 const Navbar = () => {
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          const bsCollapse = new Collapse(navbarCollapse, { toggle: false });
+          bsCollapse.hide();
+
+          // Delay AOS refresh to allow time for menu to close
+          setTimeout(() => {
+            AOS.refresh();
+          }, 500); 
+        }
+      });
+    });
+
+    return () => {
+      navLinks.forEach((link) => {
+        link.removeEventListener('click', () => {});
+      });
+    };
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">

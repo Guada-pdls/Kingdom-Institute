@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './Question.css'
 
-const Question = ({ question, onSelect }) => (
+const Question = ({ question, onSelect, selectedAnswer }) => (
   <div className="question">
     <h5>{question.id}&#41; {question.question}</h5>
     <ul>
@@ -12,6 +12,7 @@ const Question = ({ question, onSelect }) => (
               type="radio"
               name={`question-${question.id}`}
               value={option.letter}
+              checked={selectedAnswer === option.letter}
               onChange={() => onSelect(question.id, option.letter)}
             />
             {option.text}

@@ -2,10 +2,19 @@ import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../index.css';
 import ExamDetail from '../../Components/ExamDetail/ExamDetail';
+import { Helmet } from 'react-helmet';
 
 const Exams = () => {
   return (
     <>
+      <Helmet>
+        <title>Exámenes - Kingdom Institute</title>
+        <meta name="description" content="Preparación de exámenes internacionales de cualquier nivel para todas las edades." />
+        <meta name="keywords" content="cursos de ingles, inglés, inglés para niños, clases de inglés, inglés personalizado, examenes de inglés, preparacion de examenes" />
+        <meta property="og:title" content="Exámenes - Kingdom Institute" />
+        <meta property="og:description" content="Prepárate para los exámenes de certificación con los cursos de Kingdom Institute." />
+        <meta property="og:image" content="/images/exams-image.jpg" />
+      </Helmet>
       <section className="exams">
         <div className="padt">
           <h3 className="centered bold" data-aos="fade-down">

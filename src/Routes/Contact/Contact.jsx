@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet'
 import './Contact.css';
 
 const Contact = () => {
@@ -97,11 +98,20 @@ const Contact = () => {
   };
 
   return (
-    <section>
-      <form id="form" data-aos="zoom-in-up" data-aos-duration="1000" onSubmit={handleSubmit}>
-        <h4>Formulario de contacto</h4>
+    <>
+      <Helmet>
+        <title>Contacto - Kingdom Institute</title>
+        <meta name="description" content="Formulario de contacto del instituto." />
+        <meta name="keywords" content="cursos de ingles, inglés, inglés para niños, clases de inglés, inglés personalizado, examenes de inglés, preparacion de examenes" />
+        <meta property="og:title" content="Contacto - Kingdom Institute" />
+        <meta property="og:description" content="Ponte en contacto con Kingdom Institute para conocer más sobre nuestros cursos." />
+        <meta property="og:image" content="/images/contact-image.jpg" />
+      </Helmet>
+      <section>
+        <form id="form" data-aos="zoom-in-up" data-aos-duration="1000" onSubmit={handleSubmit}>
+          <h4 className='contactTitle'>Formulario de contacto</h4>
         
-        <input
+          <input
           type="text"
           placeholder="Nombre"
           name="name"
@@ -110,7 +120,7 @@ const Contact = () => {
           onChange={handleChange}
           required
         />
-        <input
+          <input
           type="text"
           placeholder="Apellido"
           name="last"
@@ -119,7 +129,7 @@ const Contact = () => {
           onChange={handleChange}
           required
         />
-        <input
+          <input
           type="email"
           placeholder="Correo electrónico"
           name="mail"
@@ -128,7 +138,7 @@ const Contact = () => {
           onChange={handleChange}
           required
         />
-        <textarea
+          <textarea
           cols="30"
           rows="5"
           placeholder="Asunto"
@@ -139,17 +149,18 @@ const Contact = () => {
           required
         ></textarea>
 
-        <input
+          <input
           type="submit"
           id="button"
           value={isSending ? 'Enviando...' : 'Enviar'}
           className="button"
           disabled={isSending} 
         />
-        {error && <div className="resultado red">{error}</div>}
+          {error && <div className="resultado red">{error}</div>}
         {successMessage && <div className="resultado green">{successMessage}</div>}
-      </form>
-    </section>
+        </form>
+      </section>
+    </>
   );
 };
 
