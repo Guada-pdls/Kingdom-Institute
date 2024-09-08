@@ -1,8 +1,17 @@
+import { Helmet } from "react-helmet"
 import CourseSection from "../../Components/CourseSection/CourseSection"
 
 const Courses = () => {
   return (
     <>
+      <Helmet>
+        <title>Cursos - Kingdom Institute</title>
+        <meta name="description" content="Cursos de inglés para niños, jóvenes y adultos. Capacitaciones para negocios, preparación de exámenes internacionales y clases personalizadas." />
+        <meta name="keywords" content="cursos de ingles, inglés, inglés para niños, clases de inglés, inglés personalizado, examenes de inglés, preparacion de examenes" />
+        <meta property="og:title" content="Cursos - Kingdom Institute" />
+        <meta property="og:description" content="Explora una variedad de cursos en Kingdom Institute para mejorar tu aprendizaje." />
+        <meta property="og:image" content="/images/courses-image.jpg" />
+      </Helmet>
       <section className="courses">
         <CourseSection
           title="Niños"

@@ -5,6 +5,7 @@ import { questions } from '../../data/questions';
 import './TestPart.css'
 import Swal from 'sweetalert2';
 import Arrow from '../../Components/Arrow/Arrow';
+import { Helmet } from 'react-helmet';
 
 const TestPart = () => {
   const { page } = useParams();
@@ -80,40 +81,50 @@ const TestPart = () => {
   };
 
   return (
-    <section className='test container'>
-      <nav className="navigation">
-        <button
-          onClick={handlePrevious}
-          disabled={part === 1}
-          className={part === 1 ? 'disabled prev' : 'prev'}
-        >
-          <Arrow color={part !== 1 ? '#bebebe' : '#2e2e2e'} direction='left' /> <span className='btn-text'>Anterior</span>
-        </button>
+    <>
+      <Helmet>
+        <title>Test de Colocación - Parte {page} - Kingdom Institute</title>
+        <meta name="description" content={`Realiza la parte ${page} de nuestro test de nivelación para conocer tu nivel de inglés.`} />
+        <meta name="keywords" content={`test de nivelacion, parte ${page}, Kingdom Institute, inglés`} />
+        <meta property="og:title" content={`Test de Nivelacion - Parte ${page} - Kingdom Institute`} />
+        <meta property="og:description" content={`Realiza la parte ${page} de nuestro test de Nivelacion.`} />
+        <meta property="og:image" content="/images/placement-test-part.jpg" />
+      </Helmet>
+      <section className='test container'>
+        <nav className="navigation">
+          <button
+            onClick={handlePrevious}
+            disabled={part === 1}
+            className={part === 1 ? 'disabled prev' : 'prev'}
+          >
+            <Arrow color={part !== 1 ? '#bebebe' : '#2e2e2e'} direction='left' /> <span className='btn-text'>Anterior</span>
+          </button>
 
-        <h3>Parte {part}</h3>
+          <h3>Parte {part}</h3>
 
-        <button
-          onClick={handleNext}
-          disabled={part === 4}
-          className={part === 4 ? 'disabled next' : 'next'}
-        >
-          <span className='btn-text'>Siguiente</span> <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'} />
-        </button>
-      </nav>
-      <div className='questions'>
-        {currentQuestions.map(q => (
-          <Question
-            key={q.id} 
-            question={q} 
-            onSelect={handleSelect} 
-            selectedAnswer={answers[q.id]}
+          <button
+            onClick={handleNext}
+            disabled={part === 4}
+            className={part === 4 ? 'disabled next' : 'next'}
+          >
+            <span className='btn-text'>Siguiente</span> <Arrow color={part !== 4 ? '#bebebe' : '#2e2e2e'} />
+          </button>
+        </nav>
+        <div className='questions'>
+          {currentQuestions.map(q => (
+            <Question
+              key={q.id}
+              question={q}
+              onSelect={handleSelect}
+              selectedAnswer={answers[q.id]}
             />
-        ))}
-      </div>
-      <button onClick={handleNext} className='button'>
-        {part === 4 ? 'Finalizar test' : 'Siguiente parte'}
-      </button>
-    </section>
+          ))}
+        </div>
+        <button onClick={handleNext} className='button'>
+          {part === 4 ? 'Finalizar test' : 'Siguiente parte'}
+        </button>
+      </section>
+    </>
   );
 };
 

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import './Gallery.css'
 
 const Gallery = () => {
@@ -16,13 +17,23 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="gallery">
-      {images.map((image, index) => (
-        <picture className={index % 2 == 0 ? "item horizontal" : "item vertical"} key={index} data-aos="fade-up">
-          <img src={image.src} alt={image.alt} className="photo" />
-        </picture>
-      ))}
-    </section>
+    <>
+      <Helmet>
+        <title>Galería - Kingdom Institute</title>
+        <meta name="description" content="Galería de fotos del instituto." />
+        <meta name="keywords" content="cursos de ingles, inglés, inglés para niños, clases de inglés, inglés personalizado, examenes de inglés, preparacion de examenes" />
+        <meta property="og:title" content="Galería - Kingdom Institute" />
+        <meta property="og:description" content="Descubre nuestros eventos y clases a través de nuestra galería de fotos." />
+        <meta property="og:image" content="/images/gallery-image.jpg" />
+      </Helmet>
+      <section className="gallery">
+        {images.map((image, index) => (
+          <picture className={index % 2 == 0 ? "item horizontal" : "item vertical"} key={index} data-aos="fade-up">
+            <img src={image.src} alt={image.alt} className="photo" />
+          </picture>
+        ))}
+      </section>
+    </>
   )
 }
 
