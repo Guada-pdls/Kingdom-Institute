@@ -66,7 +66,7 @@ const Contact = () => {
       setSuccessMessage('');
 
       try {
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/email`, { // TODO: Cambiar URL por la del backend
+        const response = await fetch(`https://ki-back-guadapdls-projects.vercel.app/api/email`, { 
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
