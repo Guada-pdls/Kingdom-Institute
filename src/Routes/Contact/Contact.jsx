@@ -76,6 +76,7 @@ const Contact = () => {
             mail: formData.mail,
             msg: formData.msg
           }),
+          credentials: 'include'
         });
 
         if (!response.ok) {
