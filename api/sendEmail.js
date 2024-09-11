@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -29,14 +29,14 @@ export default async function handler(req, res) {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: import.meta.env.VITE_GMAIL_USER,
-      pass: import.meta.env.VITE_GMAIL_PASS,
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
     },
   });
 
   let mailOptions = {
     from: mail,
-    to: import.meta.env.VITE_RECEIVER_EMAIL,
+    to: process.env.RECEIVER_EMAIL,
     subject: `Mensaje de ${name} ${last}`,
     text: msg,
   };
