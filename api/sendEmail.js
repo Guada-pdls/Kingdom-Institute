@@ -11,20 +11,18 @@ export default async function handler(req, res) {
     return res.status(400).send({ success: false, message: 'Todos los campos son obligatorios.' });
   }
 
-  const nameLastRegex = /^[A-Za-zÑñÁáÉéÍíÓóÚú]+(?:\s+[A-Za-zÑñÁáÉéÍíÓóÚú]+)*$/gm;
-  if (!nameLastRegex.test(name)) {
+  if (!name.match(/^[A-Za-zÑñÁáÉéÍíÓóÚú]+(?:\s+[A-Za-zÑñÁáÉéÍíÓóÚú]+)*$/gm)) {
     return res.status(400).send({ success: false, message: 'El nombre tiene un formato inválido.' });
   }
-  if (!nameLastRegex.test(last)) {
+  if (!last.match(/^[A-Za-zÑñÁáÉéÍíÓóÚú]+(?:\s+[A-Za-zÑñÁáÉéÍíÓóÚú]+)*$/gm)) {
     return res.status(400).send({ success: false, message: 'El apellido tiene un formato inválido.' });
   }
 
-  const mailRegex = /^(([^<>()[\]\\.,;:\s@”]+(\.[^<>()\\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
-  if (!mailRegex.test(mail)) {
+  if (!mail.match(/^(([^<>()[\]\\.,;:\s@”]+(\.[^<>()[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/)) {
     return res.status(400).send({ success: false, message: 'El correo tiene un formato inválido.' });
   }
 
-  if (!nameLastRegex.test(msg)) {
+  if (!msg.match(/^[A-Za-zÑñÁáÉéÍíÓóÚú]+(?:\s+[A-Za-zÑñÁáÉéÍíÓóÚú]+)*$/gm)) {
     return res.status(400).send({ success: false, message: 'El mensaje tiene un formato inválido.' });
   }
 
