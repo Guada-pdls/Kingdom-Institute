@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Routes/Home/Home.jsx';
 import Contact from './Routes/Contact/Contact.jsx';
 import Courses from './Routes/Courses/Courses.jsx';
-import CustomizedClasses from './Routes/CustomizedClasses/CustomizedClasses.jsx';
 import Exams from './Routes/Exams/Exams.jsx';
 import Gallery from './Routes/Gallery/Gallery.jsx';
 
@@ -31,7 +30,6 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/courses' element={<Courses />} />
-          <Route path='/customized-classes' element={<CustomizedClasses />} />
           <Route path='/exams' element={<Exams />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/placement-test' element={<PlacementTest />} />
