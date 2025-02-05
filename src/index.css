@@ -1,102 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Quicksand:wght@500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-ul {
-    padding: 0;
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 
 .btn {
-    margin: 18px;
-    border: none;
+  margin: 18px;
+  border: none;
 }
 
 .btn::placeholder {
-    color: #000;
+  color: #000;
 }
 
 .hover-scale {
-    transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 
 main {
-    background-color: #060b5ae0;
-    color: white;
-    min-height: 600px;
-    font-family: "Montserrat";
-    padding: 2rem 0;
+  background-color: #16165a;
+  color: white;
+  min-height: 600px;
+  font-family: "Montserrat";
+  padding-top: 2rem;
 }
 
 main p {
-    font-size: 1.1rem;
-    padding: 40px;
+  font-size: 1.1rem;
+  padding: 40px;
 }
 
 main h3 {
-    font-family: "Quicksand";
-    font-size: 1.6rem;
+  font-family: "Quicksand";
+  font-size: 1.6rem;
 }
 
 main h4 {
-    font-size: 1.3rem;
-    padding-left: 2rem;
-    padding-top: 1rem;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 main div ul li {
-    padding: 15px 0 10px 10px;
-    margin-left: 10px;
+  padding: 15px 0 10px 10px;
+  margin-left: 10px;
 }
 
 main section div h3 {
-    padding-top: 3rem;
-    display: flex;
-    justify-content: center;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .centered {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .padt {
-    padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .bordered {
-    border-left: #fff solid 1px;
-    border-right: #fff solid 1px;
+  border-left: #ffffff4a solid 1px;
+  border-right: #ffffff4a solid 1px;
 }
 
 .exams,
 .courses {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .sangria {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 @media screen and (max-width: 992px) {
-    main section div h3 {
-        text-align: center;
-        padding-top: 2rem;
-    }
-    
-    .bordered {
-        border: none;
-    }
+  main section div h3 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .bordered {
+    border: none;
+  }
 }
