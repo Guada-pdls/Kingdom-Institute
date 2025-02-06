@@ -1,0 +1,46 @@
+.exams {
+	padding: 0 8rem;
+}
+
+.exams h4, .exams p {
+	padding: 0;
+}
+
+.icon {
+  height: 1rem;
+}
+
+.certificateDetails,
+.certificationReasons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.examDetails {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+	gap: 1rem;
+}
+
+.examDetails li {
+  list-style-type: none;
+  border: 1px solid #ffffff4a;
+  background-color: #ffffff0e;
+  border-radius: 8px;
+  width: calc((100vw - 16rem) / 3); 
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.examDetails li img {
+  max-height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.examDetails li p {
+  font-size: 1rem;
+  padding: .5rem 0 0 0;
+  margin: 0;
+}

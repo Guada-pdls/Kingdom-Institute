@@ -20,6 +20,7 @@ ol {
 .btn {
   margin: 18px;
   border: none;
+  cursor: pointer;
 }
 
 .btn::placeholder {
@@ -33,9 +34,9 @@ ol {
 main {
   background-color: #16165a;
   color: white;
-  min-height: 600px;
+  min-height: calc(100vh - 100px);
   font-family: "Montserrat";
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 main p {
@@ -83,7 +84,6 @@ main section div h3 {
   border-right: #ffffff4a solid 1px;
 }
 
-.exams,
 .courses {
   padding: 1rem 2rem;
 }

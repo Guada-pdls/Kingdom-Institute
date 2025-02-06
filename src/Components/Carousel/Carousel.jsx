@@ -9,10 +9,10 @@ const Carousel = () => {
             <img src="./images/banner.jpg" className="d-block w-100 slide" alt="Banner instituto" />
           </div>
           <div className="carousel-item">
-            <img src="./images/levels.webp" className="d-block w-100 slide" alt="Niveles" />
+            <img src="./images/banner-inscripciones-abiertas.jpg" className="d-block w-100 slide" alt="Banner de inscripciones abiertas" />
           </div>
           <div className="carousel-item">
-            <img src="./images/levels.webp" className="d-block w-100 slide" alt="Niveles" />
+            <img src="./images/banner-clases-de-ingles.jpg" className="d-block w-100 slide" alt="Banner de clases de ingles" />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">

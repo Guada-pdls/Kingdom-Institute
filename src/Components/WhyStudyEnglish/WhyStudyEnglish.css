@@ -15,7 +15,7 @@
 }
 
 .reasons li {
-	width: calc((100vw - 20rem) / 3);
+	width: calc((100vw - 22rem) / 3);
 	padding: 1rem;
 	margin-bottom: 6px;
 	border: 1px solid #ffffff4a;
