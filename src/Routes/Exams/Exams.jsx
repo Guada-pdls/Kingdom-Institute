@@ -18,27 +18,27 @@ const Exams = () => {
       <section className="exams">
         <div className="padt">
           <h3 className="centered bold" data-aos="fade-down">
-            Preparación de exámenes internacionales
+            Exámenes internacionales
           </h3>
           <h4 data-aos="fade-right">Cursos de preparación para:</h4>
           <ul className="offerings ms-5">
-            <li>Cambridge KEY y PET. Presencial o virtual, 3hs semanales.</li>
+            <li>Cambridge KET y PET. Presencial o virtual, 3hs semanales.</li>
             <li>Cambridge FCE. Presencial o virtual, 4hs semanales.</li>
             <li>Michigan ECCE. Presencial o virtual, 4hs semanales.</li>
           </ul>
         </div>
 
         <ExamDetail
-          title="Cambridge KEY"
+          title="Cambridge KET"
           description={[
-            'La titulación A2 Key prueba que puedes comunicarte en inglés en situaciones simples y cotidianas.',
+            'La titulación A2 Key English Test prueba que puedes comunicarte en inglés en situaciones simples y cotidianas.',
             'El examen pone a prueba las cuatro destrezas lingüísticas en inglés: Comprensión de Lectura (Reading), Expresión Escrita (Writing), Comprensión Auditiva (Listening) y Expresión Oral (Speaking).',
             'Con esta titulación, tendrás la confianza necesaria para abordar exámenes de nivel superior como B1 Preliminary y B2 First.',
           ]}
           examDetails={[
-            'Formato de examen: Versión ordenador o papel',
-            'Número de pruebas: 3',
-            'Duración del examen: Cerca de 2 horas',
+            ['Formato de examen', 'Versión ordenador o papel'],
+            ['Número de pruebas', '3'],
+            ['Duración del examen', 'Cerca de 2 horas'],
           ]}
           certificateDetails={[
             'Comprender y utilizar frases y expresiones básicas;',
@@ -56,13 +56,13 @@ const Exams = () => {
         <ExamDetail
           title="Cambridge PET"
           description={[
-            'La titulación B1 Preliminary demuestra que dominas los aspectos fundamentales del inglés y posees las destrezas lingüísticas necesarias para un uso cotidiano.',
+            'La titulación B1 Preliminary English Test demuestra que dominas los aspectos fundamentales del inglés y posees las destrezas lingüísticas necesarias para un uso cotidiano.',
             'En tu camino de aprendizaje, este examen es el paso intermedio entre A2 Key y B2 First.',
           ]}
           examDetails={[
-            'Formato de examen: Versión ordenador o papel',
-            'Número de pruebas: 3',
-            'Duración del examen: Cerca de 2 horas y 20 minutos',
+            ['Formato de examen', 'Versión ordenador o papel'],
+            ['Número de pruebas', '3'],
+            ['Duración del examen', 'Cerca de 2 horas y 20 minutos'],
           ]}
           certificateDetails={[
             'leer libros de texto y artículos sencillos en inglés;',
@@ -80,13 +80,13 @@ const Exams = () => {
         <ExamDetail
           title="Cambridge FCE"
           description={[
-            'Con la titulación B2 First, demuestras ante el mundo que posees las destrezas lingüísticas necesarias para vivir y trabajar de manera independiente en un país angloparlante, así como, para estudiar cursos impartidos en inglés.',
+            'Con la titulación B2 Certificate in English First, demuestras ante el mundo que posees las destrezas lingüísticas necesarias para vivir y trabajar de manera independiente en un país angloparlante, así como, para estudiar cursos impartidos en inglés.',
             'En tu trayectoria de aprendizaje, este examen es el paso intermedio entre B1 Preliminary y C1 Advanced.',
           ]}
           examDetails={[
-            'Formato del examen: Versión ordenador o papel',
-            'Número de pruebas: 4',
-            'Duración del examen: Cerca de 3 horas y media',
+            ['Formato del examen', 'Versión ordenador o papel'],
+            ['Número de pruebas', '4'],
+            ['Duración del examen', 'Cerca de 3 horas y media'],
           ]}
           certificateDetails={[
             'lograr una comunicación clara y efectiva;',
@@ -103,7 +103,7 @@ const Exams = () => {
         <ExamDetail
           title="Michigan ECCE"
           description={[
-            'El ECCE está dirigido al nivel intermedio alto (B2) del Marco Común Europeo de Referencia para las Lenguas (MCER). Los usuarios de idiomas en este nivel de competencia pueden:',
+            'El Examination for the Certificate of Competency in English está dirigido al nivel intermedio alto (B2) del Marco Común Europeo de Referencia para las Lenguas (MCER). Los usuarios de idiomas en este nivel de competencia pueden:',
           ]}
           certificateDetails={[
             'Comprender las ideas principales de textos complejos sobre temas tanto concretos como abstractos, incluidas discusiones técnicas en su campo de especialización.',
@@ -111,6 +111,7 @@ const Exams = () => {
             'Producir un texto claro y detallado sobre una amplia gama de temas y explicar un punto de vista sobre un tema de actualidad, dando las ventajas y desventajas de varias opciones (Consejo de Europa, 2001: 24)',
           ]}
           examDetails={[
+            ['Formato del examen', 'Papel'],
             'Número de pruebas: 4',
             'Duración del examen: Cerca de 2 horas y 45 minutos',
           ]}

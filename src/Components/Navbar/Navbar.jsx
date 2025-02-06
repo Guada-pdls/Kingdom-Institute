@@ -48,11 +48,11 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse links" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-link" to="/courses">CURSOS</Link>
-            <Link className="nav-link" to="/exams">EXÁMENES</Link>
-            <Link className="nav-link" to="/gallery">GALERÍA</Link>
+            <Link className="nav-link" to="/cursos">CURSOS</Link>
+            <Link className="nav-link" to="/examenes">EXÁMENES</Link>
+            <Link className="nav-link" to="/galeria">GALERÍA</Link>
             <Link className="nav-link" to="/placement-test">PLACEMENT TEST</Link>
-            <Link className="nav-link" to="/contact">CONTACTO</Link>
+            <Link className="nav-link" to="/contacto">CONTACTO</Link>
           </div>
         </div>
       </div>
