@@ -15,7 +15,7 @@
 }
 
 .reasons li {
-	width: calc((100vw - 22rem) / 3);
+	width: calc((80vw - 2rem) / 3);
 	padding: 1rem;
 	margin-bottom: 6px;
 	border: 1px solid #ffffff4a;
@@ -36,8 +36,12 @@
 
 /* MD */
 @media screen and (max-width: 992px) {
-  .reasons {
-    border: none;
+  .whyStudyEnglish {
+    width: 90vw;
+  }
+
+  .reasons li {
+    width: calc((90vw - 1rem) / 2);
   }
 
   .data {
@@ -48,27 +52,18 @@
 
 /* SM */
 @media screen and (max-width: 768px) {
-  .promotions {
-    padding: 1rem;
+  .reasons li {
+    width: calc((90vw - 1rem) / 2);
   }
 
-  .promotions li {
-    font-size: 1.1rem;
+  .reasons {
+    margin-top: 1rem;
   }
 }
 
 /* XS */
 @media screen and (max-width: 576px) {
-  .promotions {
-    padding: 0.9rem;
-  }
-
-  .promotions li {
-    font-size: 1rem;
-  }
-
-  .promotions li img {
-    padding-left: 1rem;
-    width: 5rem;
+  .reasons li {
+    width: 90vw;
   }
 }

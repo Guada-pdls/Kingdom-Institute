@@ -1,60 +1,51 @@
 .offerings {
-    width: 80vw;
-    margin: 0 auto;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .offerings ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-    list-style-type: none;
-    padding: 1rem 1rem 2rem 1rem;
-    border-bottom: 1px solid #ffffff4a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 1rem 1rem 2rem 1rem;
+  border-bottom: 1px solid #ffffff4a;
 }
 
 .offerings ul li {
-    padding-right: 4rem;
+  padding-right: 4rem;
 }
 
 .offerings img {
-    height: 1rem;
-    margin-right: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
 }
 
 /* MD */
 @media screen and (max-width: 992px) {
-    .offerings ul li {
-        padding: 4vw;
-    }
+  .offerings {
+    width: 90vw;
+  }
+
+	.offerings ul {
+		border-bottom: none;
+	}
 }
 
 /* SM */
 @media screen and (max-width: 768px) {
-    .offerings {
-        padding-top: 20px;
-        padding-left: 3rem;
-    }
-    
-    .offerings ul {
-        padding: 1rem 1rem 1rem 2rem;
-        margin-left: 12px;
-    }
-
-    .offerings ul li {
-        padding: 1.6rem;
-    }
 }
 
 /* XS */
 @media screen and (max-width: 576px) {
-    .offerings {
-        padding-left: 0;
-    }
+  .offerings {
+    padding-left: 0;
+  }
 
-    .offerings ul li {
-        padding: 0.8rem;
-        font-size: 1.1rem;
-    }
+  .offerings ul li {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
 }
