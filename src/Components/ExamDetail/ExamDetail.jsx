@@ -9,7 +9,7 @@ const ExamDetail = ({
   reasons,
 }) => (
   <div>
-    <h4 data-aos="fade-right" className="my-4 bold">
+    <h4 data-aos="fade-right" className="mb-4 mt-5 bold">
       {title}
     </h4>
     {description &&
@@ -45,15 +45,15 @@ const ExamDetail = ({
     )}
     {certificateDetails && (
       <>
-        <p className="py-0 mb-0">
+        <h5 className="mb-0">
           El certificado {title} demuestra que puedes:
-        </p>
+        </h5>
         <ul className="py-2 ms-2 certificateDetails">
           {certificateDetails.map((detail, index) => (
             <li key={index}>
               <img
-                className="icon"
-                src="./icons/check.svg"
+                className="examIcon"
+                src="./icons/check.svg" 
                 alt="Icono de listo"
               />
               {detail}
@@ -64,14 +64,14 @@ const ExamDetail = ({
     )}
     {reasons && (
       <>
-        <p className="py-0 mb-0">Razones para elegir {title}:</p>
+        <h5 className="mb-0">Razones para elegir {title}:</h5>
         <ul className="py-2 ms-2 certificationReasons">
           {reasons.map((reason, index) => (
             <li key={index}>
               <img
                 src="./icons/arrow-right.svg"
                 alt="Flecha"
-                className="icon"
+                className="examIcon"
               />
               {reason}
             </li>

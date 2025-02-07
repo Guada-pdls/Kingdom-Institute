@@ -112,8 +112,8 @@ const Exams = () => {
           ]}
           examDetails={[
             ['Formato del examen', 'Papel'],
-            'Número de pruebas: 4',
-            'Duración del examen: Cerca de 2 horas y 45 minutos',
+            ['Número de pruebas', '4'],
+            ['Duración del examen', 'Cerca de 2 horas y 45 minutos'],
           ]}
         />
       </section>

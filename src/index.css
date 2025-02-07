@@ -41,7 +41,6 @@ main {
 
 main p {
   font-size: 1.1rem;
-  padding: 40px;
 }
 
 main h3 {
@@ -51,17 +50,13 @@ main h3 {
 
 main h4 {
   font-size: 1.3rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
 }
 
 main div ul li {
-  padding: 15px 0 10px 10px;
-  margin-left: 10px;
+  padding: 12px 0 8px 0;
 }
 
 main section div h3 {
-  padding-top: 3rem;
   display: flex;
   justify-content: center;
 }
@@ -82,10 +77,6 @@ main section div h3 {
 .bordered {
   border-left: #ffffff4a solid 1px;
   border-right: #ffffff4a solid 1px;
-}
-
-.courses {
-  padding: 1rem 2rem;
 }
 
 .sangria {

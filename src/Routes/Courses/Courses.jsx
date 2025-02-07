@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet"
 import CourseSection from "../../Components/CourseSection/CourseSection"
+import "./Courses.css"
 
 const Courses = () => {
   return (
