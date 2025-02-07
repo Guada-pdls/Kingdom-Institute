@@ -1,5 +1,6 @@
 .exams {
-	padding: 0 8rem;
+	width: 80vw;
+  margin: auto;
 }
 
 .exams h4 {
@@ -34,7 +35,7 @@
   border: 1px solid #ffffff4a;
   background-color: #ffffff0e;
   border-radius: 8px;
-  width: calc((100vw - 18rem) / 3); 
+  width: calc((80vw - 2rem) / 3); 
   padding: 1rem;
   font-size: 1.1rem;
 }
@@ -53,4 +54,24 @@
 .exams h5 {
   font-size: 1.2rem;
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .exams {
+    width: 90vw;
+  }
+
+  .examDetails {
+    flex-wrap: wrap;
+  }
+
+  .examDetails li {
+    width: calc((90vw - 2rem) / 2);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .examDetails li {
+    width: 90vw;
+  }
 }

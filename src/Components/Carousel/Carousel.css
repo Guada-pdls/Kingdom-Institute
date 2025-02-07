@@ -4,7 +4,13 @@
 }
 
 @media screen and (max-width: 992px) {
-    .carousel {
-      padding: 1rem 0;
-    }
+  .carouselContainer {
+    width: 90vw;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .carouselContainer {
+    width: 100vw;
+  }
+}
