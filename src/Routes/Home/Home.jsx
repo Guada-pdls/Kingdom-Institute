@@ -1,6 +1,7 @@
 import Carousel from '../../Components/Carousel/Carousel';
-import Promotions from '../../Components/Promotions/Promotions';
+import WhyStudyEnglish from '../../Components/WhyStudyEnglish/WhyStudyEnglish';
 import OperatingDetails from '../../Components/OperatingDetails/OperatingDetails';
+import Offerings from '../../Components/Offerings/Offerings';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
         <meta property="og:image" content="/images/home-image.jpg" />
       </Helmet>
       <Carousel />
-      <Promotions />
+      <WhyStudyEnglish />
+      <Offerings />
       <OperatingDetails />
     </>
   );
