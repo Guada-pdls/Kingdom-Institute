@@ -29,10 +29,12 @@ const PlacementTest = () => {
         <meta property="og:description" content="Descubre tu nivel de inglés con nuestro test de colocación." />
         <meta property="og:image" content="/images/placement-test-image.jpg" />
       </Helmet>
-      <section className='test-intro container'>
-        <h3>Bienvenido al Placement Test de Inglés</h3>
-        <p>Este test evaluará tus conocimientos en inglés para determinar tu nivel. ¿Estás listo?</p>
-        <button className='button' onClick={startTest}>Iniciar Test</button>
+      <section className='test-intro-container'>
+        <div className='test-intro'>
+          <h3>Bienvenido al Placement Test de Inglés</h3>
+          <p>Este test evaluará tus conocimientos en inglés para determinar tu nivel. ¿Estás listo?</p>
+          <button className='button' onClick={startTest}>Iniciar Test</button>
+        </div>
       </section>
     </>
   );

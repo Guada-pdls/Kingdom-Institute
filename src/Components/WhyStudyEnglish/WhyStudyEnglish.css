@@ -1,0 +1,74 @@
+.whyStudyEnglish {
+  margin: 2rem auto;
+  width: 80vw;
+}
+
+.reasons {
+  display: flex;
+  justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+  margin-top: 2rem;
+	list-style-type: none;
+	border-bottom: 1px solid #ffffff4a;
+	padding: 0 0 2rem 0;
+}
+
+.reasons li {
+	width: calc((100vw - 22rem) / 3);
+	padding: 1rem;
+	margin-bottom: 6px;
+	border: 1px solid #ffffff4a;
+	border-radius: 8px;
+	background-color: #ffffff0e;
+}
+
+.reasons li img {
+	padding-bottom: .5rem;
+  max-height: 2rem;
+  max-width: 2rem;
+}
+
+.reasons li h5 {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+/* MD */
+@media screen and (max-width: 992px) {
+  .reasons {
+    border: none;
+  }
+
+  .data {
+    flex-direction: column;
+    margin-bottom: 6vh;
+  }
+}
+
+/* SM */
+@media screen and (max-width: 768px) {
+  .promotions {
+    padding: 1rem;
+  }
+
+  .promotions li {
+    font-size: 1.1rem;
+  }
+}
+
+/* XS */
+@media screen and (max-width: 576px) {
+  .promotions {
+    padding: 0.9rem;
+  }
+
+  .promotions li {
+    font-size: 1rem;
+  }
+
+  .promotions li img {
+    padding-left: 1rem;
+    width: 5rem;
+  }
+}
