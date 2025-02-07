@@ -34,7 +34,12 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      let result;
+      if (response.ok) {
+        result = await response.json();
+      } else {
+        throw new Error('Network response was not ok');
+      }
 
       if (result.success) {
         Swal.fire({
