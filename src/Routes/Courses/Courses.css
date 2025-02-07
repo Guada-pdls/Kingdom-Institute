@@ -1,3 +1,12 @@
 .courses {
-    padding: 2rem 8rem;
+    width: 80vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .courses {
+        padding: 0;
+        width: 90vw;
+        margin: auto;
+    }
 }
