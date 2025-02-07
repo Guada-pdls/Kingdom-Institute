@@ -57,7 +57,11 @@ const Footer = () => {
             alt="Logo Audeppi"
           />
         </p>
-      <img className="footer-logo" src="./images/logo.jpg" alt="Logo del instituto" />
+        <img
+          className="footer-logo"
+          src="./images/logo.jpg"
+          alt="Logo del instituto"
+        />
       </div>
     </footer>
   );

@@ -21,7 +21,7 @@ const Exams = () => {
             Exámenes internacionales
           </h3>
           <h4 data-aos="fade-right">Cursos de preparación para:</h4>
-          <ul className="offerings ms-5">
+          <ul className="offerings ps-5">
             <li>Cambridge KET y PET. Presencial o virtual, 3hs semanales.</li>
             <li>Cambridge FCE. Presencial o virtual, 4hs semanales.</li>
             <li>Michigan ECCE. Presencial o virtual, 4hs semanales.</li>
