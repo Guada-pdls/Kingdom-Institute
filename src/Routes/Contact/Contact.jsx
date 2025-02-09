@@ -25,8 +25,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
-    console.log('datos enviados:', formData);
-
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -35,8 +33,6 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
-
-      console.log('response:', response);
 
       let result;
       if (response.ok) {
