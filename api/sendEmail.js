@@ -2,8 +2,6 @@ import nodemailer from 'nodemailer';
 import process from 'node:process';
 
 export default async function handler(req, res) {
-  console.log('req.method', req.method);
-  console.log(req.body);
   if (req.method !== 'POST') {
     return res.status(405).send({ message: 'Only POST requests are allowed' });
   }
