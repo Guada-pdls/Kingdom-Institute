@@ -29,11 +29,6 @@ const Courses = () => {
           description="Cursos para adultos a partir de los 16 años. Hay evaluación formal, dividiéndose en seis niveles: Audeppi Adults 1, 2, 3, 4, 5 y Pre FC."
           details="2hs semanales. Modalidad presencial o virtual. A lo largo del año habrá 4 evaluaciones formales. El examen final consta de parte oral y escrita en todos los niveles y es respaldado por el colegio St Clare’s, Oxford."
         />
-        <CourseSection
-          title="Negocios"
-          description="Este curso se enfoca en ámbitos de negocios, como comercio internacional, finanzas, seguros, bancos y administración."
-          details="Ofrecemos la opción de rendir evaluaciones por módulos o anuales."
-        />
       </section>
     </>
   )

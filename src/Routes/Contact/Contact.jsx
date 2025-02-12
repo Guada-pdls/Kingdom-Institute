@@ -37,9 +37,9 @@ const Contact = () => {
       let result;
       if (response.ok) {
         result = await response.json();
-      } else (error) => {
-        throw new Error(error.message);
-      }
+      } 
+
+      console.log(result);
 
       if (result.success) {
         Swal.fire({
