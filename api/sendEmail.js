@@ -6,6 +6,8 @@ export default async function handler(req, res) {
     return res.status(405).send({ message: 'Only POST requests are allowed' });
   }
 
+  console.log(req.body);
+
   const { name, last, mail, msg } = req.body;
 
   if (!name || !last || !mail || !msg) {
