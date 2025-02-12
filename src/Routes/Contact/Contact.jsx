@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Helmet } from 'react-helmet';
-import Swal from 'sweetalert2';
-import './Contact.css';
+import { useState } from "react";
+import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    last: '',
-    mail: '',
-    msg: ''
+    name: "",
+    last: "",
+    mail: "",
+    msg: "",
   });
 
   const [isSending, setIsSending] = useState(false);
@@ -17,7 +17,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -26,46 +26,42 @@ const Contact = () => {
     setIsSending(true);
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
-      console.log(response);
-
       let result;
-      if (response.ok) {
-        result = await response.json();
-      } 
+      result = await response.json();
 
       console.log(result);
 
       if (result.success) {
         Swal.fire({
-          icon: 'success',
-          title: 'Mensaje enviado correctamente',
+          icon: "success",
+          title: "Mensaje enviado correctamente",
           text: result.message,
         });
         setFormData({
-          name: '',
-          last: '',
-          mail: '',
-          msg: ''
+          name: "",
+          last: "",
+          mail: "",
+          msg: "",
         });
       } else {
         Swal.fire({
-          icon: 'error',
-          title: 'Error',
+          icon: "error",
+          title: "Error",
           text: result.message,
         });
       }
     } catch (error) {
       Swal.fire({
-        icon: 'error',
-        title: 'Error',
+        icon: "error",
+        title: "Error",
         text: `Error enviando el correo: ${error.message}`,
       });
     } finally {
@@ -77,16 +73,30 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contacto - Kingdom Institute</title>
-        <meta name="description" content="Formulario de contacto del instituto." />
-        <meta name="keywords" content="cursos de ingles, inglés, inglés para niños, clases de inglés, inglés personalizado, examenes de inglés, preparacion de examenes" />
+        <meta
+          name="description"
+          content="Formulario de contacto del instituto."
+        />
+        <meta
+          name="keywords"
+          content="cursos de ingles, inglés, inglés para niños, clases de inglés, inglés personalizado, examenes de inglés, preparacion de examenes"
+        />
         <meta property="og:title" content="Contacto - Kingdom Institute" />
-        <meta property="og:description" content="Ponte en contacto con Kingdom Institute para conocer más sobre nuestros cursos." />
+        <meta
+          property="og:description"
+          content="Ponte en contacto con Kingdom Institute para conocer más sobre nuestros cursos."
+        />
         <meta property="og:image" content="/images/contact-image.jpg" />
       </Helmet>
       <section>
-        <form id="form" data-aos="zoom-in-up" data-aos-duration="1000" onSubmit={handleSubmit}>
-          <h4 className='contactTitle'>Formulario de contacto</h4>
-        
+        <form
+          id="form"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          onSubmit={handleSubmit}
+        >
+          <h4 className="contactTitle">Formulario de contacto</h4>
+
           <input
             type="text"
             placeholder="Nombre"
@@ -128,7 +138,7 @@ const Contact = () => {
           <input
             type="submit"
             id="button"
-            value={isSending ? 'Enviando...' : 'Enviar'}
+            value={isSending ? "Enviando..." : "Enviar"}
             className="button"
             disabled={isSending}
           />
