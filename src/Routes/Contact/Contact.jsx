@@ -37,8 +37,8 @@ const Contact = () => {
       let result;
       if (response.ok) {
         result = await response.json();
-      } else {
-        throw new Error('Network response was not ok');
+      } else (error) => {
+        throw new Error(error.message);
       }
 
       if (result.success) {
