@@ -37,8 +37,6 @@ const Contact = () => {
       let result;
       result = await response.json();
 
-      console.log(result);
-
       if (result.success) {
         Swal.fire({
           icon: "success",
