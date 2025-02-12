@@ -34,6 +34,8 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
+      console.log(response);
+
       let result;
       if (response.ok) {
         result = await response.json();
