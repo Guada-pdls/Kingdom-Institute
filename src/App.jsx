@@ -31,7 +31,6 @@ function App() {
           <Route path='/contacto' element={<Contact />} />
           <Route path='/cursos' element={<Courses />} />
           <Route path='/examenes' element={<Exams />} />
-          <Route path='/galeria' element={<Gallery />} />
           <Route path='/placement-test' element={<PlacementTest />} />
           <Route path='/placement-test/test/:page' element={<TestPart />} />
         </Routes>
