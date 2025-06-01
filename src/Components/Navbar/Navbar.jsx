@@ -65,7 +65,6 @@ const Navbar = () => {
           <div className="navbar-nav">
             <Link className="nav-link" to="/cursos">CURSOS</Link>
             <Link className="nav-link" to="/examenes">EXÁMENES</Link>
-            <Link className="nav-link" to="/galeria">GALERÍA</Link>
             <Link className="nav-link" to="/placement-test">PLACEMENT TEST</Link>
             <Link className="nav-link" to="/contacto">CONTACTO</Link>
           </div>
