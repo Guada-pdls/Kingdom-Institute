@@ -17,6 +17,7 @@ import PlacementTest from './Routes/PlacementTest/PlacementTest.jsx';
 import TestPart from './Routes/TestPart/TestPart.jsx';
 import Login from './Routes/Login/Login.jsx';
 import Dashboard from './Routes/Dashboard/Dashboard.jsx';
+import News from './Routes/News/News.jsx';
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <Route path='/contacto' element={<Contact />} />
           <Route path='/cursos' element={<Courses />} />
           <Route path='/examenes' element={<Exams />} />
+          <Route path='/novedades' element={<News />} />
           <Route path='/placement-test' element={<PlacementTest />} />
           <Route path='/placement-test/test/:page' element={<TestPart />} />
           <Route path='/login' element={<Login />} />'

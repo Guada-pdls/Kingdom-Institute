@@ -63,6 +63,7 @@ const Navbar = () => {
         </button>
         <div ref={navbarCollapseRef} className="collapse navbar-collapse links" id="navbarNavAltMarkup">
           <div className="navbar-nav">
+            <Link className="nav-link" to="/novedades">NOVEDADES</Link>
             <Link className="nav-link" to="/cursos">CURSOS</Link>
             <Link className="nav-link" to="/examenes">EXÁMENES</Link>
             <Link className="nav-link" to="/placement-test">PLACEMENT TEST</Link>
