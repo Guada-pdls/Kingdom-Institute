@@ -3,12 +3,22 @@ const NewsCarousel = ({ newId, newImages }) => {
         <div id={newId} className="carousel slide" >
             <div className="carousel-indicators">
                 {newImages.map((image, index) => (
-                    <button type="button" data-bs-target={"#" + newId} data-bs-slide-to={index} className={index === 0 ? "active" : ""} aria-label={"Slide " + (index + 1)}></button>
+                    <button
+                        key={index}
+                        type="button"
+                        data-bs-target={"#" + newId}
+                        data-bs-slide-to={index}
+                        className={index === 0 ? "active" : ""}
+                        aria-label={"Slide " + (index + 1)}
+                    ></button>
                 ))}
             </div>
             <div className="carousel-inner">
                 {newImages.map((image, index) => (
-                    <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                    <div
+                        key={index}
+                        className={`carousel-item ${index === 0 ? 'active' : ''}`}
+                    >
                         <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
                     </div>
                 ))}
