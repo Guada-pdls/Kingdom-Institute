@@ -17,7 +17,7 @@ export default async (req, res) => {
 
     const sheets = google.sheets({ version: 'v4', auth });
     const sheetId = process.env.GOOGLE_SHEET_ID;
-    const range = 'Novedades!A2:F'; // Asegurate que tu hoja se llame así
+    const range = 'NovedadesTest!A2:F';
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: sheetId,
@@ -31,8 +31,9 @@ export default async (req, res) => {
       title: row[0],
       date: row[1],
       images: row[2]?.split(',') || [],
-      link: row[3],
-      btn: row[4] || 'Más info',
+      imagesDescriptions: row[3]?.split('-') || [],
+      link: row[4],
+      btn: row[5] || 'Más info',
     })).reverse()
 
     res.status(200).json(news);
