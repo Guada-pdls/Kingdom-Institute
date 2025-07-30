@@ -10,12 +10,14 @@ import Home from './Routes/Home/Home.jsx';
 import Contact from './Routes/Contact/Contact.jsx';
 import Courses from './Routes/Courses/Courses.jsx';
 import Exams from './Routes/Exams/Exams.jsx';
-import Gallery from './Routes/Gallery/Gallery.jsx';
 
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer.jsx';
 import PlacementTest from './Routes/PlacementTest/PlacementTest.jsx';
 import TestPart from './Routes/TestPart/TestPart.jsx';
+import Login from './Routes/Login/Login.jsx';
+import Dashboard from './Routes/Dashboard/Dashboard.jsx';
+import News from './Routes/News/News.jsx';
 
 function App() {
   useEffect(() => {
@@ -31,8 +33,12 @@ function App() {
           <Route path='/contacto' element={<Contact />} />
           <Route path='/cursos' element={<Courses />} />
           <Route path='/examenes' element={<Exams />} />
+          <Route path='/novedades' element={<News />} />
           <Route path='/placement-test' element={<PlacementTest />} />
           <Route path='/placement-test/test/:page' element={<TestPart />} />
+          <Route path='/login' element={<Login />} />'
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='*' element={<Home />} />
         </Routes>
       </main>
       <Footer />
