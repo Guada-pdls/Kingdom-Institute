@@ -1,8 +1,8 @@
-const NewsCarousel = ({ newId, newImages }) => {
+const NewsCarousel = ({ newId, newImages, newImagesDescriptions }) => {
     return (
-        <div id={newId} className="carousel slide" >
+        <div id={newId} className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div className="carousel-indicators">
-                {newImages.map((image, index) => (
+                {newImages.map((_, index) => (
                     <button
                         key={index}
                         type="button"
@@ -19,7 +19,7 @@ const NewsCarousel = ({ newId, newImages }) => {
                         key={index}
                         className={`carousel-item ${index === 0 ? 'active' : ''}`}
                     >
-                        <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+                        <img src={image} className="d-block w-100" alt={`Slide ${index + 1}, ${newImagesDescriptions[index]}`} />
                     </div>
                 ))}
             </div>

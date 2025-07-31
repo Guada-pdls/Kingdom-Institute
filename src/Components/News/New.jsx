@@ -5,7 +5,7 @@ const New = ({ newsItem }) => {
   const isEven = (num) => num % 2 === 0;
   return (
     <article className="card mb-4" data-aos={isEven(newsItem.id) ? 'fade-right' : 'fade-left'}>
-      <NewsCarousel newId={`carousel-${newsItem.id}`} newImages={newsItem.images} />
+      <NewsCarousel newId={`carousel-${newsItem.id}`} newImages={newsItem.images} newImagesDescriptions={newsItem.imagesDescriptions} />
       <div className="card-body">
         <h2 className="card-title fs-4">{newsItem.title}</h2>
         <p className="card-text">{newsItem.date}</p>
