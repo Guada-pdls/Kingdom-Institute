@@ -73,7 +73,7 @@ export default async function handler(req, res) {
 
       await sheets.spreadsheets.values.append({
         spreadsheetId: sheetId,
-        range: 'NovedadesTest!A:F',
+        range: 'Novedades!A:F',
         valueInputOption: 'RAW',
         requestBody: { values: [row] },
       });
