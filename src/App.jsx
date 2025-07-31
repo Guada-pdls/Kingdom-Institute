@@ -16,8 +16,8 @@ import Footer from './Components/Footer/Footer.jsx';
 import PlacementTest from './Routes/PlacementTest/PlacementTest.jsx';
 import TestPart from './Routes/TestPart/TestPart.jsx';
 import Login from './Routes/Login/Login.jsx';
-import Dashboard from './Routes/Dashboard/Dashboard.jsx';
 import News from './Routes/News/News.jsx';
+import DashboardPage from './Routes/Dashboard/DashboardPage.jsx';
 
 function App() {
   useEffect(() => {
@@ -37,7 +37,7 @@ function App() {
           <Route path='/placement-test' element={<PlacementTest />} />
           <Route path='/placement-test/test/:page' element={<TestPart />} />
           <Route path='/login' element={<Login />} />'
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/dashboard' element={<DashboardPage />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </main>

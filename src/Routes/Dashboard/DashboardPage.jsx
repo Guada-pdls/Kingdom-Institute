@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
+import Dashboard from "../../Components/Dashboard/Dashboard";
 
-const Dashboard = () => {
+const DashboardPage = () => {
     const navigate = useNavigate()
     const [isAdmin, setIsAdmin] = useState(false);
 
@@ -48,9 +49,9 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard">
-            <h1>Dashboard</h1>
+            <h1 className="bold ps-4">Dashboard</h1>
             {isAdmin ? (
-                <p>Bienvenido al panel de administración.</p>
+                <Dashboard />
             ) : (
                 <p>No tienes permisos para acceder a esta sección.</p>
             )}
@@ -58,4 +59,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default DashboardPage
