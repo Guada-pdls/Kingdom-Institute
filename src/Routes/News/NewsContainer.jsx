@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import New from '../../Components/News/New';
 
-const NewsContainer = () => {
+const NewsContainer = ({ admin = false }) => {
     const [news, setNews] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const NewsContainer = () => {
                     <a className="btn btn-primary button disabled placeholder col-6" aria-disabled="true"></a>
                 </div>
             </div>}
-            {(news.length == 0 && !loading) ? <p>No hay noticias disponibles.</p> : news.map((item) => <New key={item.id} newsItem={item} />)}
+            {(news.length == 0 && !loading) ? <p>No hay noticias disponibles.</p> : news.map((item) => <New key={item.id} newsItem={item} admin={admin} />)}
         </>
     )
 }

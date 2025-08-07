@@ -1,10 +1,12 @@
+import EditAndDeleteNewsButtons from "../Dashboard/EditAndDeleteNewsButtons";
 import "./News.css"
 import NewsCarousel from "./NewsCarousel";
 
-const New = ({ newsItem }) => {
+const New = ({ newsItem, admin = false }) => {
   const isEven = (num) => num % 2 === 0;
   return (
     <article className="card mb-4" data-aos={isEven(newsItem.id) ? 'fade-right' : 'fade-left'}>
+      { admin && <EditAndDeleteNewsButtons newItem={newsItem} />}
       <NewsCarousel newId={`carousel-${newsItem.id}`} newImages={newsItem.images} newImagesDescriptions={newsItem.imagesDescriptions} />
       <div className="card-body">
         <h2 className="card-title fs-4">{newsItem.title}</h2>

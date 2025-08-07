@@ -7,7 +7,7 @@ const NewsSection = () => {
     <section className="news">
         <h2 className="bold centered fs-4">Novedades</h2>
         <AddNew />
-        <NewsContainer />
+        <NewsContainer admin={true} />
     </section>
   )
 }
